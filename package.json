@@ -1,0 +1,30 @@
+{
+    "name": "landing-page",
+    "version": "0.0.1",
+    "private": true,
+    "description": "My Gatsby Site",
+    "author": "Hugo",
+    "keywords": [
+        "gatsby"
+    ],
+    "dependencies": {
+        "@emotion/react": "latest",
+        "@emotion/styled": "latest",
+        "@material-ui/core": "next",
+        "@material-ui/styles": "next",
+        "gatsby": "latest",
+        "gatsby-plugin-emotion": "latest",
+        "gatsby-plugin-material-ui": "latest",
+        "gatsby-plugin-react-helmet": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-helmet": "latest"
+    },
+    "scripts": {
+        "develop": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+        "start": "npm run develop"
+    }
+}
