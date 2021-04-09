@@ -1,6 +1,25 @@
 module.exports = {
     siteMetadata: {
-        title: "My Gatsby Site",
+        title: "Freedgy",
+        author: `Hugo Lachkar`,
+        description: `Freedgy landing`,
+        siteUrl: `https://freedgy.com/`,
+        social: {
+            instagram: `freedgy`,
+        },
     },
-    plugins: [],
+    plugins: [
+        {
+            resolve: `gatsby-plugin-i18n`,
+            options: {
+                langKeyDefault: 'en',
+                langKeyForNull: 'en',
+                prefixDefault: false,
+                useLangKeyLayout: false,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-material-ui`,
+        },
+    ],
 };
