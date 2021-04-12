@@ -11,6 +11,7 @@ import { withStyles } from '@material-ui/core/styles';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import MuiLink from '@material-ui/core/Link'
 
 const styles = theme => ({
     footer: {
@@ -24,9 +25,14 @@ function Footer({ classes }) {
         <AppBar className={classes.footer} color="inherit" position="sticky" elevation={1}>
             <Toolbar>
                 <Grid container spacing={8} alignItems="center">
-                    <Grid item>
-                        <Typography>
-                            Designed by Freedgy with <FavoriteIcon />
+                <Grid item>
+                        <Typography variant="body2" align="center">
+                            {'Copyright © '}
+                            <MuiLink color="inherit" href="https://freedgy.com/">
+                                Freedgy
+                            </MuiLink>{' '}
+                            {new Date().getFullYear()}
+                            {'.'}
                         </Typography>
                     </Grid>
                     <Grid item xs />
