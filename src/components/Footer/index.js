@@ -45,7 +45,7 @@ function Footer({ classes }) {
                             <InstagramIcon />
                         </IconButton>
                         <IconButton
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/company/freedgy/"
                             target={'_blank'}
                             color="inherit"
                         >
