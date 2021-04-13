@@ -16,13 +16,15 @@ import MuiLink from '@material-ui/core/Link'
 const styles = theme => ({
     footer: {
         backgroundColor: "#231f20",
-        color: "#63ccff"
+        color: "#63ccff",
+        boxShadow: 'none',
+        position: "static",
       },
 });
 
 function Footer({ classes }) {
     return (
-        <AppBar className={classes.footer} color="inherit" position="sticky" elevation={1}>
+        <AppBar className={classes.footer}  elevation={1}>
             <Toolbar>
                 <Grid container spacing={8} alignItems="center">
                 <Grid item>
