@@ -1,33 +1,31 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+
 import { navigate } from 'gatsby';
 
+import ReactFlagsSelect from 'react-flags-select';
+
+
 function LanguageSelector({ classes, lang, location, className }) {
-  if (lang === 'en') {
+    const [selected, setSelected] = React.useState(lang == "en" ? 'GB' : lang.toUpperCase());
+
+    function switchLanguage(code) {
+        console.log(code)
+        if (code == 'GB') {
+            navigate('/')
+        } else {
+            navigate(`/${code.toLowerCase()}`)
+        }
+    }
+
     return (
-      <Button
-        className={classes.button}
-        variant="outlined"
-        color="inherit"
-        size="small"
-        onClick={() => navigate(`/fr${location.pathname}`)}
-      >
-        French
-      </Button>
+        <ReactFlagsSelect
+            selected={selected}
+            countries={["GB", "FR", "ES"]}
+            showSelectedLabel={false}
+            showOptionLabel={false}
+            onSelect={code => switchLanguage(code)}
+        />
     );
-  } else {
-    return (
-      <Button
-        className={classes.button}
-        variant="outlined"
-        color="inherit"
-        size="small"
-        onClick={() => navigate(location.pathname.replace('/' + lang + '/', '/'))}
-      >
-        English
-      </Button>
-    );
-  }
 }
 
 export default LanguageSelector;

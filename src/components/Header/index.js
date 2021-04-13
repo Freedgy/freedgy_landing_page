@@ -10,21 +10,10 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import LanguageSelector from '../LanguageSelector';
 
-const lightColor = 'rgba(255, 255, 255, 1)';
-
 const styles = theme => ({
-    link: {
-        color: lightColor,
-        '&:hover': {
-            color: theme.palette.common.white,
-        },
-    },
-    button: {
-        borderColor: lightColor,
-    },
     logo: {
-        height: '150px',
-        width: '150px',
+        height: '100px',
+        width: '100px',
         img: {
             margin: 0,
             height: '455px',
@@ -32,14 +21,16 @@ const styles = theme => ({
         },
     },
     appBarTransparent: {
-        backgroundColor: 'transparent',
+        backgroundColor: '#1c252c',
         boxShadow: 'none',
-        color: 'white'
+        color: 'white',
+        alignItems: 'center',
     },
     appBarSolid: {
         backgroundColor: 'white',
-        color: 'black'
-    }
+        color: 'black',
+        alignItems: 'center',
+    },
 });
 
 function Header({ classes, title, lang, location = null }) {
@@ -64,37 +55,36 @@ function Header({ classes, title, lang, location = null }) {
     return (
         <AppBar position="sticky" className={classes[navRef.current]} elevation={0}>
             <Toolbar>
-                <Grid container spacing={8} alignItems="center">
-                    <Grid item>
+                <Grid container spacing={50} alignItems="center">
+                    <Grid item xs>
                         <Avatar className={classes.logo} src="/images/logo_base.png" />
                     </Grid>
-                    <Grid>
-                        <IconButton color="inherit">
-                            1
-                        </IconButton>
-                        <IconButton color="inherit">
-                            2
-                        </IconButton>
-                        <IconButton color="inherit">
-                            3
-                        </IconButton>
-                        <IconButton color="inherit">
-                            4
-                        </IconButton>
-                        <IconButton color="inherit">
-                            5
-                        </IconButton>
-                        <IconButton color="inherit">
-                            6
-                        </IconButton>
-                    </Grid>
                     <Grid item>
-                        <LanguageSelector classes={classes} className={classes.link} location={location} lang={lang} />
+                        <Grid container spacing={1}>
+                            <Grid item xs>
+                                <IconButton color="inherit">
+                                    Home
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs>
+                                <IconButton color="inherit">
+                                    About
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs>
+                                <IconButton color="inherit">
+                                    Team
+                                </IconButton>
+                            </Grid>
+                            <Grid item xs>
+                                <IconButton color="inherit">
+                                    Contact
+                                </IconButton>
+                            </Grid>
+                        </Grid>
                     </Grid>
-                    <Grid item>
-                        <Button className={classes.button} variant="outlined" color="inherit" size="small">
-                            run
-                        </Button>
+                    <Grid item xs>
+                        <LanguageSelector classes={classes} location={location} lang={lang} />
                     </Grid>
                 </Grid>
             </Toolbar>
