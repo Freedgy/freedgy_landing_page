@@ -127,6 +127,7 @@ const styles = {
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
+        backgroundColor: 'white'
     },
     mainContent: {
         flex: 1,
