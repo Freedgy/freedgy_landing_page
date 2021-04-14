@@ -9,11 +9,40 @@ import Footer from '../Footer';
 let theme = createMuiTheme({
     typography: {
         useNextVariants: true,
-        h5: {
+        button: {
             fontWeight: 500,
-            fontSize: 26,
-            letterSpacing: 0.5,
+            fontSize: "16px",
+            lineHeight: "24px"
         },
+        h5: {
+            fontWeight: 700,
+            fontSize: "20px",
+            lineHeight: "24px",
+
+        },
+        h1: {
+            lineHeight: "96px",
+            fontWeight: 700,
+            fontSize: "88px"
+        },
+        p: {
+            fontWeight: 400,
+            fontSize: "16px",
+            lineHeight: "24px",
+        },
+        fontFamily: [
+            'poppins',
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
     },
     palette: {
         primary: {
