@@ -9,41 +9,73 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import LanguageSelector from '../LanguageSelector';
+import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
     logo: {
-        height: '100px',
-        width: '100px',
-        img: {
-            margin: 0,
-            height: '455px',
-            width: 100
-        },
+        height: '40px'
     },
     appBarTransparent: {
-        backgroundColor: '#1c252c',
-        boxShadow: 'none',
+        backgroundColor: 'transparent',
         color: 'white',
         alignItems: 'center',
+        position: "absolute",
+        width: '100%',
+        top: 0,
+        left: 0,
+        margin: 0,
+        padding: 10
     },
     appBarSolid: {
         backgroundColor: 'white',
         color: 'black',
         alignItems: 'center',
+        position: "fixed",
+        width: '100%',
+        top: 0,
+        left: 0,
+        margin: 0,
+        padding: "10px"
     },
+    container: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        width: "100%",
+        justifyContent: "space-around",
+    },
+    navBar: {
+        margin: 'auto',
+        display: 'flex',
+        flexdirection: "row",
+        alignItem: "center",
+        width: "30%",
+        justifyContent: "space-around"
+    },
+    navItemTransparent: {
+        color: "#fff"
+    },
+    navItemSolid: {
+        color: "black"
+    }
 });
 
 function Header({ classes, title, lang, location = null }) {
     const [navBackground, setNavBackground] = useState('appBarTransparent')
+    const [navTextColor, setNavTextColor] = useState('navItemTransparent')
     const navRef = React.useRef()
+    const textRef = React.useRef()
     navRef.current = navBackground
+    textRef.current = navTextColor
     useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 100
+            const show = window.scrollY > 50
             if (show) {
                 setNavBackground('appBarSolid')
+                setNavTextColor('navItemSolid')
             } else {
                 setNavBackground('appBarTransparent')
+                setNavTextColor('navItemTransparent')
             }
         }
         document.addEventListener('scroll', handleScroll)
@@ -53,41 +85,29 @@ function Header({ classes, title, lang, location = null }) {
     }, [])
 
     return (
-        <AppBar position="sticky" className={classes[navRef.current]} elevation={0}>
-            <Toolbar>
-                <Grid container spacing={50} alignItems="center">
-                    <Grid item xs>
-                        <Avatar className={classes.logo} src="/images/logo_base.png" />
-                    </Grid>
-                    <Grid item>
-                        <Grid container spacing={1}>
-                            <Grid item xs>
-                                <IconButton color="inherit">
-                                    Home
-                                </IconButton>
-                            </Grid>
-                            <Grid item xs>
-                                <IconButton color="inherit">
-                                    About
-                                </IconButton>
-                            </Grid>
-                            <Grid item xs>
-                                <IconButton color="inherit">
-                                    Team
-                                </IconButton>
-                            </Grid>
-                            <Grid item xs>
-                                <IconButton color="inherit">
-                                    Contact
-                                </IconButton>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                    <Grid item xs>
-                        <LanguageSelector classes={classes} location={location} lang={lang} />
-                    </Grid>
-                </Grid>
-            </Toolbar>
+        <AppBar className={classes[navRef.current]} elevation={0}>
+            <Box className={classes.container}>
+                <Box>
+                <img className={classes.logo} src="/images/logo/watermark.png"></img>
+                </Box>
+                <Box className={classes.navBar}>
+                    <Button className={classes[textRef.current]}>
+                        HOME
+                    </Button>
+                    <Button className={classes[textRef.current]}>
+                        ABOUT
+                    </Button>
+                    <Button className={classes[textRef.current]}>
+                        TEAM
+                    </Button>
+                    <Button className={classes[textRef.current]}>
+                        CONTACT
+                    </Button>
+                </Box>
+                <Box>
+                    <LanguageSelector classes={classes} location={location} lang={lang} />
+                </Box>
+            </Box>
         </AppBar>
     );
 }
