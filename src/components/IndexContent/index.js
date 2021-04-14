@@ -5,8 +5,9 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { Gr } from 'react-flags-select';
-
+import Avatar from '@material-ui/core/Avatar';
+import Box from '@material-ui/core/Box';
+import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = theme => ({
     root: {
@@ -22,7 +23,6 @@ const styles = theme => ({
         [theme.breakpoints.up('lg')]: {
             minWidth: 936,
         },
-        marginBottom: '20px',
         backgroundColor: '#f4f6f7',
 
     },
@@ -41,85 +41,103 @@ const styles = theme => ({
     button: {
         borderColor: 'rgba(255, 255, 255, 1)',
     },
+    home: {
+        backgroundColor: '#0067f4',
+        width: "100%",
+        margin: 0,
+        padding: 100,
+    },
+    homeImage: {
+        height: '400px'
+    },
+    homeText: {
+        flex: "0 0 30%",
+        maxWidht: '50%',
+    }
 });
 
 function Content({ classes, lang }) {
     return (
         <>
             <div className={classes.root}>
+                <Box className={classes.home} display="flex" flexDirection="row" justifyContent="space-around" alignItems="center">
+                    <Box className={classes.homeText} display="flex" flexDirection="column" alignItems="center">
+                        <Typography variant="h1" color='#fff' align="center">
+                            {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
+                        </Typography>
+                        <Typography variant="p" color="#fff" align="center">
+                            Description breve ou petit text sympatoche qui peut etre long ou pas,  je vais continuer a ecrire pour avoir un retour a la ligne et pouvoir adapter mon CSS.
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <img className={classes.homeImage} src="/images/logo/logo_base.png"></img>
+                    </Box>
+                </Box>
                 <Grid
                     container
                     spacing={2}
                     className={classes.container}
                 >
-                    <Grid item xs>
-                        <Paper className={classes.paper}>
-                            <Grid
-                                container
-                                spacing={2}
-                                className={classes.contentWrapper}
-                            >
-                                <Grid item>
-                                    <Typography component="h2" variant="h4" color="textSecondary" align="center">
-                                        {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs>
-                                    <Button className={classes.button} variant="outlined" color="inherit" size="small">
-                                        run
-                                    </Button>
-                                </Grid>
-                            </Grid>
-                        </Paper>
-                    </Grid>
+                    <Paper className={classes.paper}>
 
-                    <Grid item xs>
-                        <Paper className={classes.paper}>
-                            <Grid
-                                container
-                                spacing={1}
-                                className={classes.contentWrapper}
-                            >
-                                <Grid item>
-                                    <Typography component="h2" variant="h4" color="textSecondary" align="center">
-                                        {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
-                                    </Typography>
-                                </Grid>
+                        <Grid
+                            container
+                            spacing={2}
+                            className={classes.contentWrapper}
+                        >
+                            <Grid item lg={6} xs={12}>
+                                <Typography component="h2" variant="h4" color="textSecondary" align="center">
+                                    {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
+                                </Typography>
                             </Grid>
-                        </Paper>
-                    </Grid>
+                            <Grid item>
+                                <Typography component="h2" variant="h4" color="textSecondary" align="center">
+                                    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhho
+                                </Typography>
+                            </Grid>
+                            <Grid item xs>
+                                <Button className={classes.button} variant="outlined" color="inherit" size="small">
+                                    run
+                                </Button>
+                            </Grid>
+                        </Grid>
 
-                    <Grid item xs>
-                        <Paper className={classes.paper}>
-                            <Grid
-                                container
-                                spacing={1}
-                                className={classes.contentWrapper}
-                            >
-                                <Grid lg={6} xs={12} item>
-                                    <Typography component="h2" variant="h4" color="textSecondary" align="center">
-                                        {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
-                                    </Typography>
-                                </Grid>
+                        <Grid
+                            container
+                            spacing={1}
+                            className={classes.contentWrapper}
+                        >
+                            <Grid item>
+                                <Typography component="h2" variant="h4" color="textSecondary" align="center">
+                                    {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
+                                </Typography>
                             </Grid>
-                        </Paper>
-                    </Grid>
+                        </Grid>
 
-                    <Grid item xs>
-                        <Paper className={classes.paper}>
-                            <Grid
-                                container
-                                spacing={1}
-                                className={classes.contentWrapper}
-                            >
-                                <Grid lg={6} xs={12} item>
-                                    <Typography component="h2" variant="h4" color="textSecondary" align="center">
-                                        {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
-                                    </Typography>
-                                </Grid>
+                        <Grid
+                            container
+                            spacing={1}
+                            className={classes.contentWrapper}
+                        >
+                            <Grid item>
+                                <Typography component="h2" variant="h4" color="textSecondary" align="center">
+                                    {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
+                                </Typography>
                             </Grid>
-                        </Paper>
-                    </Grid>
+                        </Grid>
+
+                        <Grid
+                            container
+                            spacing={1}
+                            className={classes.contentWrapper}
+                        >
+                            <Grid item>
+                                <Typography component="h2" variant="h4" color="textSecondary" align="center">
+                                    {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
+                                </Typography>
+                            </Grid>
+                        </Grid>
+                    </Paper>
 
                 </Grid>
             </div>
