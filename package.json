@@ -23,7 +23,8 @@
         "react": "latest",
         "react-dom": "latest",
         "react-flags-select": "^2.1.2",
-        "react-helmet": "latest"
+        "react-helmet": "latest",
+        "react-icons": "^4.2.0"
     },
     "scripts": {
         "develop": "gatsby develop",
