@@ -23,12 +23,12 @@ function About({ classes, lang }) {
             className={classes.contentWrapper}
         >
             <Grid item lg={6} xs={12}>
-                <Typography component="h2" variant="h4" color="textSecondary" align="center">
+                <Typography variant="h4" align="center">
                     {lang === 'en' ? 'About!' : 'A propos!'}
                 </Typography>
             </Grid>
             <Grid item>
-                <Typography component="h2" variant="h4" color="textSecondary" align="center">
+                <Typography variant="h4" align="center">
                     hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhho
                 </Typography>
             </Grid>
