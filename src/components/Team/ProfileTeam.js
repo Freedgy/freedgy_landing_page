@@ -36,10 +36,10 @@ function ProfileTeam({ classes, info }) {
                 </p>
             </Box>
             <Box >
-                <Button justIcon>
+                <Button>
                     <FaLinkedin />
                 </Button>
-                <Button justIcon>
+                <Button>
                     <FaInstagram />
                 </Button>
             </Box>
