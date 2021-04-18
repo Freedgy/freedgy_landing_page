@@ -104,7 +104,7 @@ function Team({ classes, lang }) {
             </Typography>
             <Box className={classes.teamInfos}>
                 {infos.map(function (info) {
-                    return <ProfileTeam info={info} />
+                    return <ProfileTeam key={info.name} info={info} />
                 })
                 }
             </Box>
