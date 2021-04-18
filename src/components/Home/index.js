@@ -13,6 +13,7 @@ const styles = theme => ({
     home: {
         backgroundColor: '#0067f4',
         width: "100%",
+        height: "600px",
         margin: 0,
         padding: 100,
         display: "flex",
@@ -21,7 +22,7 @@ const styles = theme => ({
         alignItems: "center"
     },
     homeImage: {
-        height: '400px'
+        height: '300px'
     },
     homeText: {
         flex: "0 0 30%",
@@ -33,7 +34,8 @@ const styles = theme => ({
     button: {
         borderColor: 'rgba(255, 255, 255, 1)',
         color: "white",
-        size: "large"
+        size: "large",
+        margin: "10%"
     }
 });
 
