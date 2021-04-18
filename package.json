@@ -17,6 +17,7 @@
         "gatsby": "latest",
         "gatsby-plugin-emotion": "latest",
         "gatsby-plugin-i18n": "^1.0.1",
+        "gatsby-plugin-manifest": "^3.3.0",
         "gatsby-plugin-material-ui": "latest",
         "gatsby-plugin-react-helmet": "latest",
         "prop-types": "^15.7.2",

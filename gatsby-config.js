@@ -21,5 +21,15 @@ module.exports = {
         {
             resolve: `gatsby-plugin-material-ui`,
         },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: 'Freedgy',
+                short_name: 'Freedgy',
+                start_url: '/',
+                display: 'standalone',
+                icon: 'src/images/watermark.png',
+            },
+        }
     ],
 };
