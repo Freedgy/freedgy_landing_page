@@ -8,55 +8,48 @@ import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import MuiLink from '@material-ui/core/Link'
+import MuiLink from '@material-ui/core/Link';
+import Box from '@material-ui/core/Box';
+
 
 const styles = theme => ({
     footer: {
         backgroundColor: "white",
         color: "#404040",
-        boxShadow: 'none',
         position: "static",
-      },
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        padding: "10px"
+    },
 });
 
 function Footer({ classes, datas }) {
     return (
-        <AppBar className={classes.footer}  elevation={1}>
-            <Toolbar>
-                <Grid container spacing={8} alignItems="center">
-                <Grid item>
-                        <Typography variant="body2" align="center">
-                            {'Copyright © '}
-                            <MuiLink color="inherit" href="https://freedgy.com/">
-                                Freedgy
-                            </MuiLink>{' '}
-                            {new Date().getFullYear()}
-                            {'.'}
-                        </Typography>
-                    </Grid>
-                    <Grid item xs />
-                    <Grid item>
-                        <IconButton
-                            href={datas.instagram}
-                            target={'_blank'}
-                            color="inherit"
-                        >
-                            <InstagramIcon />
-                        </IconButton>
-                        <IconButton
-                            href={datas.linkedin}
-                            target={'_blank'}
-                            color="inherit"
-                        >
-                            <LinkedInIcon />
-                        </IconButton>
-                    </Grid>
-                </Grid>
-            </Toolbar>
-        </AppBar>
+
+        <Box className={classes.footer} alignItems="center">
+            <Box>
+                <Typography variant="body2" align="center">
+                    {'Copyright © '}
+                    <MuiLink color="#008080" href="https://freedgy.com/">
+                        Freedgy
+                    </MuiLink>
+                    {' '}
+                    {new Date().getFullYear()}
+                    {'.'}
+                </Typography>
+            </Box>
+            <Box>
+                <Button href={datas.instagram}>
+                    <FaInstagram color="#008080" />
+                </Button>
+                <Button href={datas.linkedin}>
+                    <FaLinkedin color="#008080" />
+                </Button>
+            </Box>
+        </Box>
     );
 }
 
