@@ -7,8 +7,6 @@ import Layout from '../components/Layout';
 export default function Index({ location }) {
     const datas = require("../../static/pages/pages.en.json");
 
-    console.log(datas);
-
     return (
         <Layout location={location} lang="en" datas={datas.layout}>
             <IndexContent lang="en" datas={datas.content} />
