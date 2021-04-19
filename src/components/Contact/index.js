@@ -18,7 +18,7 @@ const styles = theme => ({
 function Contact({ classes, datas }) {
     return (
         <section id="contact" className={classes.contact} >
-            <Typography component="h2" variant="h4" color="textSecondary" align="center">
+            <Typography variant="h2" align="center">
                 {datas.title}
             </Typography>
         </section>

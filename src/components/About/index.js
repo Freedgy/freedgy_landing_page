@@ -18,10 +18,10 @@ const styles = theme => ({
 function About({ classes, datas }) {
     return (
         <section id="about" className={classes.about}>
-            <Typography variant="h4" align="center">
+            <Typography variant="h2" align="center">
                 {datas.title}
             </Typography>
-            <Typography variant="h4" align="center">
+            <Typography variant="p" align="center">
                 {datas.description}
             </Typography>
         </section>
