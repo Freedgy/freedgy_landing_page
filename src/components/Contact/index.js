@@ -15,7 +15,7 @@ const styles = theme => ({
     },
 });
 
-function Contact({ classes, lang }) {
+function Contact({ classes, datas }) {
     return (
         <Grid
             container
@@ -24,7 +24,7 @@ function Contact({ classes, lang }) {
         >
             <Grid item>
                 <Typography component="h2" variant="h4" color="textSecondary" align="center">
-                    {lang === 'en' ? 'Contact!' : 'Contact!'}
+                    {datas.title}
                 </Typography>
             </Grid>
         </Grid>
@@ -33,6 +33,7 @@ function Contact({ classes, lang }) {
 
 Contact.propTypes = {
     classes: PropTypes.object.isRequired,
+    datas: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Contact);

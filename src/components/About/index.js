@@ -15,7 +15,7 @@ const styles = theme => ({
     },
 });
 
-function About({ classes, lang }) {
+function About({ classes, datas }) {
     return (
         <Grid
             container
@@ -24,12 +24,12 @@ function About({ classes, lang }) {
         >
             <Grid item lg={6} xs={12}>
                 <Typography variant="h4" align="center">
-                    {lang === 'en' ? 'About!' : 'A propos!'}
+                    {datas.title}
                 </Typography>
             </Grid>
             <Grid item>
                 <Typography variant="h4" align="center">
-                    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhho
+                    {datas.description}
                 </Typography>
             </Grid>
         </Grid>
@@ -38,6 +38,7 @@ function About({ classes, lang }) {
 
 About.propTypes = {
     classes: PropTypes.object.isRequired,
+    datas: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(About);

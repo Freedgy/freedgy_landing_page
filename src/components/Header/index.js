@@ -60,7 +60,7 @@ const styles = theme => ({
     }
 });
 
-function Header({ classes, title, lang, location = null }) {
+function Header({ classes, lang, location = null, datas }) {
     const [navBackground, setNavBackground] = useState('appBarTransparent')
     const [navTextColor, setNavTextColor] = useState('navItemTransparent')
     const navRef = React.useRef()
@@ -88,20 +88,20 @@ function Header({ classes, title, lang, location = null }) {
         <AppBar className={classes[navRef.current]} elevation={0}>
             <Box className={classes.container}>
                 <Box>
-                <img className={classes.logo} src="/images/logo/watermark.png"></img>
+                    <img className={classes.logo} src={datas.logo}></img>
                 </Box>
                 <Box className={classes.navBar}>
                     <Button className={classes[textRef.current]}>
-                        HOME
+                        {datas.navBar.home}
                     </Button>
                     <Button className={classes[textRef.current]}>
-                        ABOUT
+                        {datas.navBar.about}
                     </Button>
                     <Button className={classes[textRef.current]}>
-                        TEAM
+                        {datas.navBar.team}
                     </Button>
                     <Button className={classes[textRef.current]}>
-                        CONTACT
+                        {datas.navBar.contact}
                     </Button>
                 </Box>
                 <Box>
@@ -114,7 +114,7 @@ function Header({ classes, title, lang, location = null }) {
 
 Header.propTypes = {
     classes: PropTypes.object.isRequired,
-    title: PropTypes.string.isRequired,
+    datas: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Header);

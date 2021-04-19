@@ -22,7 +22,7 @@ const styles = theme => ({
       },
 });
 
-function Footer({ classes }) {
+function Footer({ classes, datas }) {
     return (
         <AppBar className={classes.footer}  elevation={1}>
             <Toolbar>
@@ -40,14 +40,14 @@ function Footer({ classes }) {
                     <Grid item xs />
                     <Grid item>
                         <IconButton
-                            href="https://instagram.com"
+                            href={datas.instagram}
                             target={'_blank'}
                             color="inherit"
                         >
                             <InstagramIcon />
                         </IconButton>
                         <IconButton
-                            href="https://www.linkedin.com/company/freedgy/"
+                            href={datas.linkedin}
                             target={'_blank'}
                             color="inherit"
                         >
@@ -62,6 +62,7 @@ function Footer({ classes }) {
 
 Footer.propTypes = {
     classes: PropTypes.object.isRequired,
+    datas: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Footer);

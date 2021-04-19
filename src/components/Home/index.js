@@ -39,22 +39,22 @@ const styles = theme => ({
     }
 });
 
-function Home({ classes, lang }) {
+function Home({ classes, datas }) {
     return (
         <Box className={classes.home}>
             <Box className={classes.homeText}>
                 <Typography variant="h1" color='#fff' align="center">
-                    {lang === 'en' ? 'Welcome!' : 'Bienvenue!'}
+                    {datas.title}
                 </Typography>
                 <Typography variant="p" color="#fff" align="center">
-                    Description breve ou petit text sympatoche qui peut etre long ou pas,  je vais continuer a ecrire pour avoir un retour a la ligne et pouvoir adapter mon CSS.
+                    {datas.description}
                 </Typography>
                 <Button className={classes.button} variant="outlined">
-                    Get Started
+                    {datas.button}
                 </Button>
             </Box>
             <Box>
-                <img className={classes.homeImage} src="/images/logo/logo_base.png"></img>
+                <img className={classes.homeImage} src={datas.image}></img>
             </Box>
         </Box>
     );
@@ -62,6 +62,7 @@ function Home({ classes, lang }) {
 
 Home.propTypes = {
     classes: PropTypes.object.isRequired,
+    datas: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Home);

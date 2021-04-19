@@ -32,20 +32,20 @@ const styles = theme => ({
     },
 });
 
-function Content({ classes, lang }) {
+function Content({ classes, lang, datas }) {
     return (
         <>
             <div className={classes.root}>
-                <Home lang={lang}/>
+                <Home datas={datas.home}/>
                 <Grid
                     container
                     spacing={2}
                     className={classes.container}
                 >
                     <Paper className={classes.paper}>
-                        <About lang={lang}/>
-                        <Team lang={lang}/>
-                        <Contact lang={lang} />
+                        <About datas={datas.about}/>
+                        <Team datas={datas.team}/>
+                        <Contact datas={datas.contact} />
                     </Paper>
 
                 </Grid>
@@ -56,6 +56,7 @@ function Content({ classes, lang }) {
 
 Content.propTypes = {
     classes: PropTypes.object.isRequired,
+    datas: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(Content);

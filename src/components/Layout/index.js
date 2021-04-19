@@ -164,14 +164,14 @@ const styles = {
     },
 };
 
-function Layout({ location, title, children, classes, lang }) {
+function Layout({ location, children, classes, lang, datas }) {
     return (
         <MuiThemeProvider theme={theme}>
             <div className={classes.appContent}>
                 <CssBaseline />
-                <Header title={title} location={location} lang={lang} />
+                <Header location={location} lang={lang} datas={datas.header} />
                 <main className={classes.mainContent}>{children}</main>
-                <Footer />
+                <Footer datas={datas.footer}/>
             </div>
         </MuiThemeProvider>
     );
@@ -180,7 +180,6 @@ function Layout({ location, title, children, classes, lang }) {
 Layout.propTypes = {
     classes: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
-    title: PropTypes.string.isRequired,
     children: PropTypes.object,
 };
 
