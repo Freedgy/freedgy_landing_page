@@ -1,0 +1,101 @@
+{
+    "layout": {
+        "header": {
+            "logo": "/images/logo/watermark.png",
+            "navBar": {
+                "home": "menu",
+                "about": "sobre nosotros",
+                "team": "equipo",
+                "contact": "contactarnos"
+            }
+        },
+        "footer": {
+            "instagram": "https://instagram.com",
+            "linkedin": ""
+        }
+    },
+    "content": {
+        "home": {
+            "title": "Bienvenido",
+            "description": "Description breve ou petit text sympatoche qui peut etre long ou pas, je vais continuer a ecrire pour avoir un retour a la ligne et pouvoir adapter mon CSS.",
+            "button": "get started",
+            "image": "/images/logo/logo_base.png"
+        },
+        "about": {
+            "title": "Sobre nosotros",
+            "description": "hhhhhhhh"
+        },
+        "team": {
+            "title": "Nuestro equipo",
+            "description": "Freedgy is a non profitable enterprise run by 7 Epitech students from Barcelona, Berlin and Strasbourg that will spread a movement of solidarity.",
+            "profiles": [
+                {
+                    "name": "Hugo Lachkar",
+                    "city": "Barcelona",
+                    "role": "Desarrollador Web Frontend / Hardware manager / DevOps",
+                    "description": "Un putain de BG",
+                    "image": "/images/team/hugo.jpg",
+                    "linkedIn": "url",
+                    "instagram": "url"
+                },
+                {
+                    "name": "Arnau Roncari",
+                    "city": "Berlin",
+                    "role": "Desarrollador Backend / Manager del proyecto",
+                    "description": "Un putain de BG",
+                    "image": "/images/team/hugo.jpg",
+                    "linkedIn": "url",
+                    "instagram": "url"
+                },
+                {
+                    "name": "Corentin Rozet",
+                    "city": "Barcleona",
+                    "role": "Desarrollador Backend",
+                    "description": "Un putain de BG",
+                    "image": "/images/team/hugo.jpg",
+                    "linkedIn": "url",
+                    "instagram": "url"
+                },
+                {
+                    "name": "Noe I...",
+                    "city": "Berlin",
+                    "role": "Desarrollador Frontend Mobile",
+                    "description": "Un putain de BG",
+                    "image": "/images/team/hugo.jpg",
+                    "linkedIn": "url",
+                    "instagram": "url"
+                },
+                {
+                    "name": "Maxence Desrousseaux",
+                    "city": "Barcelona",
+                    "role": "Desarrollador Frontend Web",
+                    "description": "Un putain de BG",
+                    "image": "/images/team/hugo.jpg",
+                    "linkedIn": "url",
+                    "instagram": "url"
+                },
+                {
+                    "name": "Lucas Goetz",
+                    "city": "Strasbourg",
+                    "role": "Desarrollador Backend",
+                    "description": "Un putain de BG",
+                    "image": "/images/team/hugo.jpg",
+                    "linkedIn": "url",
+                    "instagram": "url"
+                },
+                {
+                    "name": "Victor ...",
+                    "city": "Starsbourg",
+                    "role": "Desarrollador Frontend Mobile",
+                    "description": "Un putain de BG",
+                    "image": "/images/team/hugo.jpg",
+                    "linkedIn": "url",
+                    "instagram": "url"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contactarnos"
+        }
+    }
+}
