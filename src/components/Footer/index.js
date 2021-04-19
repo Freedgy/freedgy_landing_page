@@ -15,8 +15,8 @@ import MuiLink from '@material-ui/core/Link'
 
 const styles = theme => ({
     footer: {
-        backgroundColor: "#1c252c",
-        color: "#63ccff",
+        backgroundColor: "white",
+        color: "#404040",
         boxShadow: 'none',
         position: "static",
       },
