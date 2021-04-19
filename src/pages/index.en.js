@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import IndexContent from '../components/IndexContent';
 import Layout from '../components/Layout';
 
-import $ from 'jquery';
-
 export default function Index({ location }) {
     const datas = require("../../static/pages/pages.en.json");
 
