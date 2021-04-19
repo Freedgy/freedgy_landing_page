@@ -11,7 +11,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = theme => ({
     home: {
-        backgroundColor: '#0067f4',
+        background: 'linear-gradient(180deg, #006666 10%, #00a0a0 70%)',
         width: "100%",
         height: "600px",
         margin: 0,
