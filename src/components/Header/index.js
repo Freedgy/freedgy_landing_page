@@ -91,16 +91,16 @@ function Header({ classes, lang, location = null, datas }) {
                     <img className={classes.logo} src={datas.logo}></img>
                 </Box>
                 <Box className={classes.navBar}>
-                    <Button className={classes[textRef.current]}>
+                    <Button className={classes[textRef.current]} href="#home">
                         {datas.navBar.home}
                     </Button>
-                    <Button className={classes[textRef.current]}>
+                    <Button className={classes[textRef.current]} href="#about">
                         {datas.navBar.about}
                     </Button>
-                    <Button className={classes[textRef.current]}>
+                    <Button className={classes[textRef.current]} href="#team">
                         {datas.navBar.team}
                     </Button>
-                    <Button className={classes[textRef.current]}>
+                    <Button className={classes[textRef.current]} href="#contact">
                         {datas.navBar.contact}
                     </Button>
                 </Box>
