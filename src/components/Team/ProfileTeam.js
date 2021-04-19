@@ -63,10 +63,10 @@ function ProfileTeam({ classes, info }) {
                 </Typography>
             </Box>
             <Box >
-                <Button>
+                <Button href={info.linkedin}>
                     <FaLinkedin color="#008080" />
                 </Button>
-                <Button>
+                <Button href={info.instagram}>
                     <FaInstagram color="#008080" />
                 </Button>
             </Box>

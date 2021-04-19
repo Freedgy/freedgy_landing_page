@@ -10,8 +10,8 @@
             }
         },
         "footer": {
-            "instagram": "https://instagram.com",
-            "linkedin": ""
+            "instagram": "https://www.instagram.com/freedgy.project",
+            "linkedin": "https://www.linkedin.com/company/freedgy/"
         }
     },
     "content": {
@@ -34,7 +34,7 @@
                     "city": "Barcelona",
                     "role": "Frontend Web Developper",
                     "image": "/images/team/hugo.jpg",
-                    "linkedIn": "url",
+                    "linkedin": "https://www.linkedin.com/in/hugo-lachkar-56a36314b/",
                     "instagram": "url"
                 },
                 {
@@ -42,7 +42,7 @@
                     "city": "Berlin",
                     "role": "Backend Developper",
                     "image": "/images/team/arnau.jpg",
-                    "linkedIn": "url",
+                    "linkedin": "url",
                     "instagram": "url"
                 },
                 {
@@ -50,7 +50,7 @@
                     "city": "Barcleona",
                     "role": "Backend Developper",
                     "image": "/images/team/corentin.jpg",
-                    "linkedIn": "url",
+                    "linkedin": "url",
                     "instagram": "url"
                 },
                 {
@@ -58,7 +58,7 @@
                     "city": "Berlin",
                     "role": "Frontend Mobile Developper",
                     "image": "/images/team/noe.jpg",
-                    "linkedIn": "url",
+                    "linkedin": "url",
                     "instagram": "url"
                 },
                 {
@@ -66,7 +66,7 @@
                     "city": "Barcelona",
                     "role": "Frontend Web Developper",
                     "image": "/images/team/maxence.jpg",
-                    "linkedIn": "url",
+                    "linkedin": "url",
                     "instagram": "url"
                 },
                 {
@@ -74,7 +74,7 @@
                     "city": "Strasbourg",
                     "role": "Backend Developper",
                     "image": "/images/team/lucas.jpg",
-                    "linkedIn": "url",
+                    "linkedin": "url",
                     "instagram": "url"
                 },
                 {
@@ -82,7 +82,7 @@
                     "city": "Starsbourg",
                     "role": "Frontend Mobile Developper",
                     "image": "/images/team/victor.jpg",
-                    "linkedIn": "url",
+                    "linkedin": "url",
                     "instagram": "url"
                 }
             ]
