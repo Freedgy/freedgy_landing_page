@@ -32,8 +32,7 @@
                 {
                     "name": "Hugo Lachkar",
                     "city": "Barcelona",
-                    "role": "Frontend Web Developper / Hardware manager / DevOps",
-                    "description": "Un putain de BG",
+                    "role": "Frontend Web Developper",
                     "image": "/images/team/hugo.jpg",
                     "linkedIn": "url",
                     "instagram": "url"
@@ -41,9 +40,8 @@
                 {
                     "name": "Arnau Roncari",
                     "city": "Berlin",
-                    "role": "Backend Developper / Project manager",
-                    "description": "Un putain de BG",
-                    "image": "/images/team/hugo.jpg",
+                    "role": "Backend Developper",
+                    "image": "/images/team/arnau.jpg",
                     "linkedIn": "url",
                     "instagram": "url"
                 },
@@ -51,17 +49,15 @@
                     "name": "Corentin Rozet",
                     "city": "Barcleona",
                     "role": "Backend Developper",
-                    "description": "Un putain de BG",
-                    "image": "/images/team/hugo.jpg",
+                    "image": "/images/team/corentin.jpg",
                     "linkedIn": "url",
                     "instagram": "url"
                 },
                 {
-                    "name": "Noe I...",
+                    "name": "Noe Sechet",
                     "city": "Berlin",
                     "role": "Frontend Mobile Developper",
-                    "description": "Un putain de BG",
-                    "image": "/images/team/hugo.jpg",
+                    "image": "/images/team/noe.jpg",
                     "linkedIn": "url",
                     "instagram": "url"
                 },
@@ -69,8 +65,7 @@
                     "name": "Maxence Desrousseaux",
                     "city": "Barcelona",
                     "role": "Frontend Web Developper",
-                    "description": "Un putain de BG",
-                    "image": "/images/team/hugo.jpg",
+                    "image": "/images/team/maxence.jpg",
                     "linkedIn": "url",
                     "instagram": "url"
                 },
@@ -78,17 +73,15 @@
                     "name": "Lucas Goetz",
                     "city": "Strasbourg",
                     "role": "Backend Developper",
-                    "description": "Un putain de BG",
-                    "image": "/images/team/hugo.jpg",
+                    "image": "/images/team/lucas.jpg",
                     "linkedIn": "url",
                     "instagram": "url"
                 },
                 {
-                    "name": "Victor ...",
+                    "name": "Victor Karcher",
                     "city": "Starsbourg",
                     "role": "Frontend Mobile Developper",
-                    "description": "Un putain de BG",
-                    "image": "/images/team/hugo.jpg",
+                    "image": "/images/team/victor.jpg",
                     "linkedIn": "url",
                     "instagram": "url"
                 }
