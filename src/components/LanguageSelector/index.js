@@ -9,11 +9,10 @@ function LanguageSelector({ classes, lang, location, className }) {
     const [selected, setSelected] = React.useState(lang == "en" ? 'GB' : lang.toUpperCase());
 
     function switchLanguage(code) {
-        console.log(code)
         if (code == 'GB') {
-            navigate('/')
+            navigate(`/${location.hash}`)
         } else {
-            navigate(`/${code.toLowerCase()}`)
+            navigate(`/${code.toLowerCase()}${location.hash}`)
         }
     }
 
