@@ -10,29 +10,21 @@ import Box from '@material-ui/core/Box';
 import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = theme => ({
-    contentWrapper: {
+    about: {
         height: 368,
     },
 });
 
 function About({ classes, datas }) {
     return (
-        <Grid
-            container
-            spacing={2}
-            className={classes.contentWrapper}
-        >
-            <Grid item lg={6} xs={12}>
-                <Typography variant="h4" align="center">
-                    {datas.title}
-                </Typography>
-            </Grid>
-            <Grid item>
-                <Typography variant="h4" align="center">
-                    {datas.description}
-                </Typography>
-            </Grid>
-        </Grid>
+        <section id="about" className={classes.about}>
+            <Typography variant="h4" align="center">
+                {datas.title}
+            </Typography>
+            <Typography variant="h4" align="center">
+                {datas.description}
+            </Typography>
+        </section>
     );
 }
 

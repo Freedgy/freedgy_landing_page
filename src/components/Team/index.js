@@ -31,7 +31,7 @@ const styles = theme => ({
 
 function Team({ classes, datas }) {
     return (
-        <Box className={classes.team}>
+        <section id="team" className={classes.team}>
             <Typography variant="h2" align="center">
                 {datas.title}
             </Typography>
@@ -44,7 +44,7 @@ function Team({ classes, datas }) {
                 })
                 }
             </Box>
-        </Box>
+        </section>
 
     );
 }

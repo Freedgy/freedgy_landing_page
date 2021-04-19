@@ -41,7 +41,7 @@ const styles = theme => ({
 
 function Home({ classes, datas }) {
     return (
-        <Box className={classes.home}>
+        <section id="home" className={classes.home}>
             <Box className={classes.homeText}>
                 <Typography variant="h1" color='#fff' align="center">
                     {datas.title}
@@ -56,7 +56,7 @@ function Home({ classes, datas }) {
             <Box>
                 <img className={classes.homeImage} src={datas.image}></img>
             </Box>
-        </Box>
+        </section>
     );
 }
 
