@@ -15,14 +15,17 @@ const styles = theme => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        color: "black"
+        color: "#404040",
     },
     teamInfos: {
         width: "100%",
         display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        color: "black"
+        flexFlow: "row wrap",
+        alignItems: "flex-start",
+        alignContent: "center",
+        justifyContent: "center",
+        color: "#404040",
+        padding: "50px"
     },
 });
 
