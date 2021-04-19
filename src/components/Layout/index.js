@@ -12,23 +12,33 @@ let theme = createMuiTheme({
         button: {
             fontWeight: 500,
             fontSize: "16px",
-            lineHeight: "24px"
+            lineHeight: "24px",
+            color: "#404040"
         },
         h5: {
             fontWeight: 700,
             fontSize: "20px",
             lineHeight: "24px",
+            color: "#404040"
 
+        },
+        h2: {
+            lineHeight: "60px",
+            fontWeight: 700,
+            fontSize: "50px",
+            color: "#404040"
         },
         h1: {
             lineHeight: "96px",
             fontWeight: 700,
-            fontSize: "88px"
+            fontSize: "88px",
+            color: "#404040"
         },
         p: {
             fontWeight: 400,
             fontSize: "16px",
             lineHeight: "24px",
+            color: "#404040"
         },
         fontFamily: [
             'poppins',
@@ -48,7 +58,7 @@ let theme = createMuiTheme({
         primary: {
             light: '#63ccff',
             main: '#F05A22',
-            dark: '#231f20',
+            dark: '#404040',
         },
     },
     shape: {
@@ -156,7 +166,7 @@ const styles = {
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'white'
+        backgroundColor: '#00a0a0'
     },
     mainContent: {
         flex: 1,
@@ -171,7 +181,7 @@ function Layout({ location, children, classes, lang, datas }) {
                 <CssBaseline />
                 <Header location={location} lang={lang} datas={datas.header} />
                 <main className={classes.mainContent}>{children}</main>
-                <Footer datas={datas.footer}/>
+                <Footer datas={datas.footer} />
             </div>
         </MuiThemeProvider>
     );

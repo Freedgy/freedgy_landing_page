@@ -28,7 +28,7 @@ const styles = theme => ({
     },
     appBarSolid: {
         backgroundColor: 'white',
-        color: 'black',
+        color: '#404040',
         alignItems: 'center',
         position: "fixed",
         width: '100%',
@@ -56,7 +56,7 @@ const styles = theme => ({
         color: "#fff"
     },
     navItemSolid: {
-        color: "black"
+        color: "#404040"
     }
 });
 
