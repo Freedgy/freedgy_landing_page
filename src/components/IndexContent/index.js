@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 
 import Home from '../Home';
-import About from '../About';
+import Context from '../Context';
+import Project from '../Project';
 import Team from '../Team';
 import Contact from '../Contact';
 
@@ -16,7 +18,6 @@ const styles = theme => ({
     paper: {
         margin: 'auto',
         overflow: 'hidden',
-        padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             minWidth: 600,
         },
@@ -27,28 +28,34 @@ const styles = theme => ({
 
     },
     container: {
-        padding: '48px 36px 48px',
-
+        padding: '0px 36px 48px',
     },
+    video: {
+        width: "60%",
+        minHeight: "480px"
+    }
 });
 
 function Content({ classes, lang, datas }) {
     return (
         <>
             <div className={classes.root}>
-                <Home datas={datas.home}/>
-                <Grid
-                    container
-                    spacing={2}
-                    className={classes.container}
-                >
+                <Home datas={datas.home} />
+                <Box className={classes.container}>
                     <Paper className={classes.paper}>
-                        <About datas={datas.about}/>
-                        <Team datas={datas.team}/>
+                        <iframe
+                            className={classes.video}
+                            src={datas.video}
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                        <Project datas={datas.project} />
+                        <Context datas={datas.context} />
+                        <Team datas={datas.team} />
                         <Contact datas={datas.contact} />
                     </Paper>
-
-                </Grid>
+                </Box>
             </div>
         </>
     );
