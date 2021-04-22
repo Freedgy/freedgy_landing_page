@@ -19,13 +19,13 @@
         "video": "https://www.youtube.com/embed/N7f81zv11YM",
         "home": {
             "title": "Welcome",
-            "description": " Every day, many people cannot afford to buy the food necessary to have a decent diet. Contradictorily, on average, each supermarket (in France) throws away 20 kilograms of food daily. Our goal is to redistribute that food to people in need such as students, homeless people, and big families by providing connected fridges to supermarkets.",
+            "description": "Every day, many people cannot afford to buy the food necessary to have a decent diet. Contradictorily, on average, each supermarket (in France) throws away 20 kilograms of food daily. Our goal is to redistribute that food to people in need such as students, homeless people, and big families by providing connected fridges to supermarkets.",
             "button": "get started",
             "image": "/images/logo/logo_base.png"
         },
         "project": {
             "title": "Project",
-            "description": "hhhhhhhh"
+            "description": "In the society of today, there is a lot of food waste. Furthermore, thousands of people struggle to earn enough money to feed themselves. We figured that most of the food waste was done before the citizens would get access to it: supermarkets throw away dozens of kilograms of consumable food every day. Today, there is no smart way for supermarkets to avoid wasting that food. That is when Freedgy come in. We will sell fridges to supermarkets and restaurants. Then they will be able to put the food they would otherwise throw away in those fridges.The fridges will be connected to our mobile application. On the mobile application, anyone like you and I will be able to donate food, and the supermarkets/restaurants in charge will simply put that donated food into the fridge."
         },
         "context": {
             "title": "Context",
