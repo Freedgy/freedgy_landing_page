@@ -10,27 +10,38 @@ import Box from '@material-ui/core/Box';
 import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = theme => ({
-    about: {
-        height: 368,
+    project: {
+        margin: "5% 0%",
+        width: "100%",
+        height: "100%"
     },
+    content: {
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    }
 });
 
-function About({ classes, datas }) {
+function Project({ classes, datas }) {
     return (
-        <section id="about" className={classes.about}>
+        <section id="project" className={classes.project}>
             <Typography variant="h2" align="center">
                 {datas.title}
             </Typography>
-            <Typography variant="p" align="center">
-                {datas.description}
-            </Typography>
+            <Box className={classes.content}>
+                <Typography variant="p" align="center">
+                    {datas.description}
+                </Typography>
+            </Box>
         </section>
     );
 }
 
-About.propTypes = {
+Project.propTypes = {
     classes: PropTypes.object.isRequired,
     datas: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(About);
+export default withStyles(styles)(Project);
