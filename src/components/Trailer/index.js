@@ -6,6 +6,13 @@ import { withStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
+    trailer: {
+        margin: "5% 0 0 0",
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        justifyContent: "center",
+    },
     video: {
         width: "60%",
         minHeight: "480px"
@@ -14,7 +21,7 @@ const styles = theme => ({
 
 function Trailer({ classes, lang, datas }) {
     return (
-        <section id="trailer">
+        <section className={classes.trailer} id="trailer">
             <iframe
                 className={classes.video}
                 src={datas.src}

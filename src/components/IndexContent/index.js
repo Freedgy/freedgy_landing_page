@@ -26,6 +26,11 @@ const styles = theme => ({
             minWidth: 936,
         },
         backgroundColor: '#f4f6f7',
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
 
     },
     container: {
