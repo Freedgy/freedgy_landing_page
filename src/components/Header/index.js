@@ -104,8 +104,11 @@ function Header({ classes, lang, location = null, datas }) {
                     <Button className={classes[textRef.current]} href="#home">
                         {datas.navBar.home}
                     </Button>
-                    <Button className={classes[textRef.current]} href="#about">
-                        {datas.navBar.about}
+                    <Button className={classes[textRef.current]} href="#project">
+                        {datas.navBar.project}
+                    </Button>
+                    <Button className={classes[textRef.current]} href="#context">
+                        {datas.navBar.context}
                     </Button>
                     <Button className={classes[textRef.current]} href="#team">
                         {datas.navBar.team}
