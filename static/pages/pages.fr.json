@@ -16,7 +16,9 @@
         }
     },
     "content": {
-        "video": "https://www.youtube.com/embed/N7f81zv11YM",
+        "trailer": {
+            "src": "https://www.youtube.com/embed/N7f81zv11YM"
+        },
         "home": {
             "title": "Bienvenue",
             "description": "Tous les jours, de nombreuses personnes ne mangent pas à leur faim par manque de moyen. Contradictoirement, chaque supermarché (en France) jette en moyenne 20 kilogrammes de nourriture par jour. Nous voulons redistribuer cette nourriture auxpersonnes dansle besoin tel que des étudiants, des sans-abris, et des grandes familles en fournissant des frigos connectés aux supermarchés.",

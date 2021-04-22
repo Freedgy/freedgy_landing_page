@@ -16,7 +16,9 @@
         }
     },
     "content": {
-        "video": "https://www.youtube.com/embed/N7f81zv11YM",
+        "trailer": {
+            "src": "https://www.youtube.com/embed/N7f81zv11YM"
+        },
         "home": {
             "title": "Welcome",
             "description": "Every day, many people cannot afford to buy the food necessary to have a decent diet. Contradictorily, on average, each supermarket (in France) throws away 20 kilograms of food daily. Our goal is to redistribute that food to people in need such as students, homeless people, and big families by providing connected fridges to supermarkets.",

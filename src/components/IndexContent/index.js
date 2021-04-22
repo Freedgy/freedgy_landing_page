@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 
 import Home from '../Home';
+import Trailer from '../Trailer';
 import Context from '../Context';
 import Project from '../Project';
 import Team from '../Team';
@@ -30,10 +31,6 @@ const styles = theme => ({
     container: {
         padding: '0px 36px 48px',
     },
-    video: {
-        width: "60%",
-        minHeight: "480px"
-    }
 });
 
 function Content({ classes, lang, datas }) {
@@ -43,13 +40,7 @@ function Content({ classes, lang, datas }) {
                 <Home datas={datas.home} />
                 <Box className={classes.container}>
                     <Paper className={classes.paper}>
-                        <iframe
-                            className={classes.video}
-                            src={datas.video}
-                            frameBorder="0"
-                            allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
+                        <Trailer datas={datas.trailer} />
                         <Project datas={datas.project} />
                         <Context datas={datas.context} />
                         <Team datas={datas.team} />

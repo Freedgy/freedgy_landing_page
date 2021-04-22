@@ -16,7 +16,9 @@
         }
     },
     "content": {
-        "video": "https://www.youtube.com/embed/N7f81zv11YM",
+        "trailer": {
+            "src": "https://www.youtube.com/embed/N7f81zv11YM"
+        },
         "home": {
             "title": "Bienvenido",
             "description": "Todos los días, muchas personas no pueden permitirse comprar lo suficiente como para tener una dieta decente. Del otro lado, cada supermercado (en Francia) tira 20 kilogramos de comida al día. Nuestro objetivo es redistribuir esos alimentos a las personas necesitadas, como los estudiantes, las personas sin hogar y las familias grandes, instalando neveras conectadas en los supermercados.",
