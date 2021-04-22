@@ -58,7 +58,6 @@ const styles = theme => ({
         '&:hover': {
             color: "black",
             backgroundColor: 'transparent',
-            boxShadow: 'none',
         },
     },
     navItemSolid: {
@@ -67,10 +66,6 @@ const styles = theme => ({
         '&:hover': {
             color: "#008080",
             backgroundColor: 'transparent',
-        },
-        '&:active': {
-            boxShadow: 'none',
-            backgroundColor: '#3c52b2',
         },
     }
 });
