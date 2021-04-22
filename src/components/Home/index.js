@@ -32,10 +32,16 @@ const styles = theme => ({
         alignItems: "center",
     },
     button: {
-        borderColor: 'rgba(255, 255, 255, 1)',
-        color: "white",
+        borderColor: '#fff',
+        backgroundColor: 'white',
+        color: "#008080",
         size: "large",
-        margin: "10%"
+        margin: "10%",
+        '&:hover': {
+            borderColor: 'white',
+            color: "white",
+            backgroundColor: 'transparent',
+        },
     }
 });
 
