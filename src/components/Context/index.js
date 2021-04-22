@@ -11,7 +11,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 const styles = theme => ({
     context: {
-        margin: "5% 0%",
+        marginBottom: "5%",
         width: "100%",
         height: "100%"
     },
