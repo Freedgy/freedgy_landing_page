@@ -4,7 +4,7 @@
             "logo": "/images/logo/watermark.png",
             "navBar": {
                 "home": "menu",
-                "project": "project",
+                "project": "projet",
                 "context": "context",
                 "team": "equipe",
                 "contact": "contact"
@@ -22,11 +22,11 @@
         "home": {
             "title": "Bienvenue",
             "description": "Tous les jours, de nombreuses personnes ne mangent pas à leur faim par manque de moyen. Contradictoirement, chaque supermarché (en France) jette en moyenne 20 kilogrammes de nourriture par jour. Nous voulons redistribuer cette nourriture auxpersonnes dansle besoin tel que des étudiants, des sans-abris, et des grandes familles en fournissant des frigos connectés aux supermarchés.",
-            "button": "Accerder a Freedgy",
+            "button": "Acceder a Freedgy",
             "image": "/images/logo/logo_base.png"
         },
         "project": {
-            "title": "Project",
+            "title": "Projet",
             "description": "Notre société actuelle fait face à un gaspillage alimentaire considérable. De plus des milliers de personnes se retrouvent en précarité alimentaire. Nous nous sommes rendu compte qu'une grande partie de ce gaspillage était effectué avant même que les foyers aient accès à ces denrése: les supermarchés jettent tous les jours des dizaines de kilogrammes de nourriture encore consommable. Aujourd'hui, il n'y a pas de moyen mis en place pour aider les supermarchés à réduire ce gaspillage. C'est ici que Freedgy entre en action. Nous vendons des frigidaires aux supermarchés et restaurants. Ils pourront ensuite mettre la nourriture qu'ils s'apprêtaient à jeter dans ces mêmes frigidaires. Ces frigidaires seront connectés à notre application mobile. Sur cette application, n'importe qui, vous par exemple, pourrait faire un don et les enseignes se chargeront de mettre votre don alimentaire dans leur frigidaire."
         },
         "context": {
