@@ -4,7 +4,8 @@
             "logo": "/images/logo/watermark.png",
             "navBar": {
                 "home": "menu",
-                "about": "a propos",
+                "project": "project",
+                "context": "context",
                 "team": "equipe",
                 "contact": "contact"
             }
@@ -15,14 +16,19 @@
         }
     },
     "content": {
+        "video": "https://www.youtube.com/embed/N7f81zv11YM",
         "home": {
             "title": "Bienvenue",
-            "description": "Description breve ou petit text sympatoche qui peut etre long ou pas, je vais continuer a ecrire pour avoir un retour a la ligne et pouvoir adapter mon CSS.",
+            "description": "Tous les jours, de nombreuses personnes ne mangent pas à leur faim par manque de moyen. Contradictoirement, chaque supermarché (en France) jette en moyenne 20 kilogrammes de nourriture par jour. Nous voulons redistribuer cette nourriture auxpersonnes dansle besoin tel que des étudiants, des sans-abris, et des grandes familles en fournissant des frigos connectés aux supermarchés.",
             "button": "Accerder a Freedgy",
             "image": "/images/logo/logo_base.png"
         },
-        "about": {
-            "title": "A propos",
+        "project": {
+            "title": "Project",
+            "description": "hhhhhhhh"
+        },
+        "context": {
+            "title": "Context",
             "description": "hhhhhhhh"
         },
         "team": {

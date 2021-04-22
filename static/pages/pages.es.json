@@ -4,7 +4,8 @@
             "logo": "/images/logo/watermark.png",
             "navBar": {
                 "home": "menu",
-                "about": "sobre nosotros",
+                "project": "proyecto",
+                "context": "contexto",
                 "team": "equipo",
                 "contact": "contactarnos"
             }
@@ -15,14 +16,19 @@
         }
     },
     "content": {
+        "video": "https://www.youtube.com/embed/N7f81zv11YM",
         "home": {
             "title": "Bienvenido",
-            "description": "Description breve ou petit text sympatoche qui peut etre long ou pas, je vais continuer a ecrire pour avoir un retour a la ligne et pouvoir adapter mon CSS.",
+            "description": "Todos los días, muchas personas no pueden permitirse comprar lo suficiente como para tener una dieta decente. Del otro lado, cada supermercado (en Francia) tira 20 kilogramos de comida al día. Nuestro objetivo es redistribuir esos alimentos a las personas necesitadas, como los estudiantes, las personas sin hogar y las familias grandes, instalando neveras conectadas en los supermercados.",
             "button": "get started",
             "image": "/images/logo/logo_base.png"
         },
-        "about": {
-            "title": "Sobre nosotros",
+        "project": {
+            "title": "Project",
+            "description": "hhhhhhhh"
+        },
+        "context": {
+            "title": "Context",
             "description": "hhhhhhhh"
         },
         "team": {

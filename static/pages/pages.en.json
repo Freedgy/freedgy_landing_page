@@ -4,7 +4,8 @@
             "logo": "/images/logo/watermark.png",
             "navBar": {
                 "home": "home",
-                "about": "about",
+                "project": "project",
+                "context": "context",
                 "team": "team",
                 "contact": "contact"
             }
@@ -15,14 +16,19 @@
         }
     },
     "content": {
+        "video": "https://www.youtube.com/embed/N7f81zv11YM",
         "home": {
             "title": "Welcome",
-            "description": "Description breve ou petit text sympatoche qui peut etre long ou pas, je vais continuer a ecrire pour avoir un retour a la ligne et pouvoir adapter mon CSS.",
+            "description": " Every day, many people cannot afford to buy the food necessary to have a decent diet. Contradictorily, on average, each supermarket (in France) throws away 20 kilograms of food daily. Our goal is to redistribute that food to people in need such as students, homeless people, and big families by providing connected fridges to supermarkets.",
             "button": "get started",
             "image": "/images/logo/logo_base.png"
         },
-        "about": {
-            "title": "About Us",
+        "project": {
+            "title": "Project",
+            "description": "hhhhhhhh"
+        },
+        "context": {
+            "title": "Context",
             "description": "hhhhhhhh"
         },
         "team": {
