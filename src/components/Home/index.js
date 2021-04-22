@@ -24,9 +24,17 @@ const styles = theme => ({
     homeImage: {
         height: '300px'
     },
-    homeText: {
+    homeInfos: {
         flex: "0 0 40%",
         maxWidht: '50%',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
+    homeText: {
+        width: "100%",
+        height: "100%",
+        justifyContent: "space-between",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -48,13 +56,16 @@ const styles = theme => ({
 function Home({ classes, datas }) {
     return (
         <section id="home" className={classes.home}>
-            <Box className={classes.homeText}>
-                <Typography variant="h1" color='#fff' align="center">
-                    {datas.title}
-                </Typography>
-                <Typography variant="p" color="#fff" align="center">
-                    {datas.description}
-                </Typography>
+            <Box className={classes.homeInfos}>
+                <Box className={classes.homeText}>
+                    <Typography variant="h1" color='#fff' align="center">
+                        {datas.title}
+                    </Typography>
+                    <br/>
+                    <Typography variant="p" color="#fff" align="center">
+                        {datas.description}
+                    </Typography>
+                </Box>
                 <Button className={classes.button} variant="outlined">
                     {datas.button}
                 </Button>
