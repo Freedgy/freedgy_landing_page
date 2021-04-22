@@ -13,7 +13,7 @@ const styles = theme => ({
     home: {
         background: 'linear-gradient(180deg, #006666 10%, #00a0a0 70%)',
         width: "100%",
-        height: "600px",
+        height: "650px",
         margin: 0,
         padding: 100,
         display: "flex",
@@ -25,7 +25,7 @@ const styles = theme => ({
         height: '300px'
     },
     homeText: {
-        flex: "0 0 30%",
+        flex: "0 0 40%",
         maxWidht: '50%',
         display: "flex",
         flexDirection: "column",
