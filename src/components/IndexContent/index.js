@@ -4,6 +4,8 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
+import Carousel from 'react-material-ui-carousel'
+import HomeIcon from '@material-ui/icons/Home';
 
 import Home from '../Home';
 import Trailer from '../Trailer';
@@ -36,6 +38,13 @@ const styles = theme => ({
     container: {
         padding: '0px 36px 48px',
     },
+    about: {
+        width: "80%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
 });
 
 function Content({ classes, lang, datas }) {
@@ -46,8 +55,30 @@ function Content({ classes, lang, datas }) {
                 <Box className={classes.container}>
                     <Paper className={classes.paper}>
                         <Trailer datas={datas.trailer} />
-                        <Project datas={datas.project} />
-                        <Context datas={datas.context} />
+                        <section className={classes.about} id="about">
+                            <Carousel interval="10000" animation="slide"
+                                navButtonsProps={{
+                                    style: {
+                                        backgroundColor: '#008080',
+                                        borderRadius: 20
+                                    }
+                                }}
+                                indicatorIconButtonProps={{
+                                    style: {
+                                        padding: '0.5%'
+                                    }
+                                }}
+                                activeIndicatorIconButtonProps={{
+                                    style: {
+                                        color: '#008080'
+                                    }
+                                }}
+                                navButtonsAlwaysVisible="true"
+                            >
+                                <Project datas={datas.project} />
+                                <Context datas={datas.context} />
+                            </Carousel>
+                        </section>
                         <Team datas={datas.team} />
                         <Contact datas={datas.contact} />
                     </Paper>
