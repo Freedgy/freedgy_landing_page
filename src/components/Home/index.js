@@ -61,7 +61,7 @@ function Home({ classes, datas }) {
                     <Typography variant="h1" color='#fff' align="center">
                         {datas.title}
                     </Typography>
-                    <br/>
+                    <br />
                     <Typography variant="p" color="#fff" align="center">
                         {datas.description}
                     </Typography>
@@ -70,9 +70,7 @@ function Home({ classes, datas }) {
                     {datas.button}
                 </Button>
             </Box>
-            <Box>
-                <img className={classes.homeImage} src={datas.image}></img>
-            </Box>
+            <img className={classes.homeImage} src={datas.image}></img>
         </section>
     );
 }
