@@ -4,41 +4,159 @@ import { MuiThemeProvider, createMuiTheme, withStyles } from '@material-ui/core/
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../Header';
 import Footer from '../Footer';
+/*
+ Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
 
+ Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
 
+ Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+ Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+ Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}*/
 let theme = createMuiTheme({
+
     typography: {
         useNextVariants: true,
         button: {
-            fontWeight: 500,
-            fontSize: "16px",
-            lineHeight: "24px",
-            color: "#404040"
+            '@media only screen and (max-width: 600px)': {
+                fontWeight: 300,
+                fontSize: "10px",
+                lineHeight: "18px",
+            },
+            '@media only screen and (min-width: 600px)': {
+                fontWeight: 300,
+                fontSize: "12px",
+                lineHeight: "20px",
+            },
+            '@media only screen and (min-width: 768px)': {
+                fontWeight: 400,
+                fontSize: "14px",
+                lineHeight: "22px",
+            },
+            '@media only screen and (min-width: 992px)': {
+                fontWeight: 400,
+                fontSize: "14px",
+                lineHeight: "22px",
+            },
+            '@media only screen and (min-width: 1200px)': {
+                fontWeight: 500,
+                fontSize: "16px",
+                lineHeight: "24px",
+            },
         },
         h5: {
-            fontWeight: 700,
-            fontSize: "20px",
-            lineHeight: "24px",
-            color: "#404040"
-
+            '@media only screen and (max-width: 600px)': {
+                fontWeight: 500,
+                fontSize: "16px",
+                lineHeight: "20px",
+            },
+            '@media only screen and (min-width: 600px)': {
+                fontWeight: 500,
+                fontSize: "16px",
+                lineHeight: "20px",
+            },
+            '@media only screen and (min-width: 768px)': {
+                fontWeight: 600,
+                fontSize: "18px",
+                lineHeight: "22px",
+            },
+            '@media only screen and (min-width: 992px)': {
+                fontWeight: 600,
+                fontSize: "18px",
+                lineHeight: "22px",
+            },
+            '@media only screen and (min-width: 1200px)': {
+                fontWeight: 700,
+                fontSize: "20px",
+                lineHeight: "24px",
+            },
         },
         h2: {
-            lineHeight: "60px",
-            fontWeight: 700,
-            fontSize: "50px",
-            color: "#404040"
+            '@media only screen and (max-width: 600px)': {
+                lineHeight: "40px",
+                fontWeight: 400,
+                fontSize: "30px",
+            },
+            '@media only screen and (min-width: 600px)': {
+                lineHeight: "40px",
+                fontWeight: 400,
+                fontSize: "30px",
+            },
+            '@media only screen and (min-width: 768px)': {
+                lineHeight: "50px",
+                fontWeight: 600,
+                fontSize: "40px",
+            },
+            '@media only screen and (min-width: 992px)': {
+                lineHeight: "50px",
+                fontWeight: 600,
+                fontSize: "40px",
+            },
+            '@media only screen and (min-width: 1200px)': {
+                lineHeight: "60px",
+                fontWeight: 700,
+                fontSize: "50px",
+            },
         },
         h1: {
-            lineHeight: "96px",
-            fontWeight: 700,
-            fontSize: "88px",
-            color: "#404040"
+            '@media only screen and (max-width: 600px)': {
+                lineHeight: "48px",
+                fontWeight: 500,
+                fontSize: "40px",
+            },
+            '@media only screen and (min-width: 600px)': {
+                lineHeight: "60px",
+                fontWeight: 500,
+                fontSize: "52px",
+            },
+            '@media only screen and (min-width: 768px)': {
+                lineHeight: "72px",
+                fontWeight: 600,
+                fontSize: "64px",
+            },
+            '@media only screen and (min-width: 992px)': {
+                lineHeight: "84px",
+                fontWeight: 600,
+                fontSize: "76px",
+            },
+            '@media only screen and (min-width: 1200px)': {
+                lineHeight: "96px",
+                fontWeight: 700,
+                fontSize: "88px",
+            },
         },
         p: {
-            fontWeight: 400,
-            fontSize: "16px",
-            lineHeight: "24px",
-            color: "#404040"
+            '@media only screen and (max-width: 600px)': {
+                fontWeight: 300,
+                fontSize: "12px",
+                lineHeight: "20px"
+            },
+            '@media only screen and (min-width: 600px)': {
+                fontWeight: 300,
+                fontSize: "12px",
+                lineHeight: "20px"
+            },
+            '@media only screen and (min-width: 768px)': {
+                fontWeight: 300,
+                fontSize: "14px",
+                lineHeight: "22px"
+            },
+            '@media only screen and (min-width: 992px)': {
+                fontWeight: 300,
+                fontSize: "14px",
+                lineHeight: "22px"
+            },
+            '@media only screen and (min-width: 1200px)': {
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "24px"
+            },
         },
         fontFamily: [
             'poppins',
@@ -66,101 +184,6 @@ let theme = createMuiTheme({
     },
 });
 
-theme = {
-    ...theme,
-    overrides: {
-        MuiDrawer: {
-            paper: {
-                backgroundColor: '#231f20',
-            },
-        },
-        MuiButton: {
-            label: {
-                textTransform: 'initial',
-            },
-            contained: {
-                boxShadow: 'none',
-                '&:active': {
-                    boxShadow: 'none',
-                },
-            },
-        },
-        MuiTabs: {
-            root: {
-                marginLeft: theme.spacing.unit,
-            },
-            indicator: {
-                height: 3,
-                borderTopLeftRadius: 3,
-                borderTopRightRadius: 3,
-                backgroundColor: theme.palette.common.white,
-            },
-        },
-        MuiTab: {
-            root: {
-                textTransform: 'initial',
-                margin: '0 16px',
-                minWidth: 0,
-                [theme.breakpoints.up('md')]: {
-                    minWidth: 0,
-                },
-            },
-            labelContainer: {
-                padding: 0,
-                [theme.breakpoints.up('md')]: {
-                    padding: 0,
-                },
-            },
-        },
-        MuiIconButton: {
-            root: {
-                padding: theme.spacing.unit,
-            },
-        },
-        MuiTooltip: {
-            tooltip: {
-                borderRadius: 4,
-            },
-        },
-        MuiDivider: {
-            root: {
-                backgroundColor: '#404854',
-            },
-        },
-        MuiListItemText: {
-            primary: {
-                fontWeight: theme.typography.fontWeightMedium,
-            },
-        },
-        MuiListItemIcon: {
-            root: {
-                color: 'inherit',
-                marginRight: 0,
-                '& svg': {
-                    fontSize: 20,
-                },
-            },
-        },
-        MuiAvatar: {
-            root: {
-                width: 32,
-                height: 32,
-            },
-        },
-    },
-    props: {
-        MuiTab: {
-            disableRipple: true,
-        },
-    },
-    mixins: {
-        ...theme.mixins,
-        toolbar: {
-            minHeight: 48,
-        },
-    },
-};
-
 const styles = {
     appContent: {
         flex: 1,
@@ -170,7 +193,7 @@ const styles = {
     },
     mainContent: {
         flex: 1,
-        padding: '0px',
+        padding: '0%',
     },
 };
 
