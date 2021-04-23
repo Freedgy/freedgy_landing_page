@@ -8,28 +8,36 @@ import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import Box from '@material-ui/core/Box';
 import CardMedia from '@material-ui/core/CardMedia';
+import useWindowSize from '/static/js/useWindowSize';
 
 const styles = theme => ({
     home: {
         background: 'linear-gradient(180deg, #006666 10%, #00a0a0 70%)',
         width: "100%",
-        height: "650px",
         margin: 0,
-        padding: 100,
+        padding: '10%',
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-around",
-        alignItems: "center"
+        alignItems: "center",
+        '@media only screen and (max-width: 992px)': {
+            paddingTop: '12%',
+            paddingBottom: '0%'
+        },
     },
     homeImage: {
-        height: '300px'
+        width: "35%",
+        height: 'auto'
     },
     homeInfos: {
-        flex: "0 0 40%",
+        flex: "0 0 50%",
         maxWidht: '50%',
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        '@media only screen and (max-width: 992px)': {
+            flex: "0 0 90%",
+        },
     },
     homeText: {
         width: "100%",
@@ -54,6 +62,8 @@ const styles = theme => ({
 });
 
 function Home({ classes, datas }) {
+    const size = useWindowSize();
+
     return (
         <section id="home" className={classes.home}>
             <Box className={classes.homeInfos}>
@@ -62,7 +72,7 @@ function Home({ classes, datas }) {
                         {datas.title}
                     </Typography>
                     <br />
-                    <Typography variant="p" color="#fff" align="center">
+                    <Typography variant="p" color="#fff" align="justify">
                         {datas.description}
                     </Typography>
                 </Box>
@@ -70,7 +80,7 @@ function Home({ classes, datas }) {
                     {datas.button}
                 </Button>
             </Box>
-            <img className={classes.homeImage} src={datas.image}></img>
+            {size.width > 992 ? (<img className={classes.homeImage} src={datas.image}></img>) : (null)}
         </section>
     );
 }

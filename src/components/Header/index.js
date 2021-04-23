@@ -13,7 +13,10 @@ import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
     logo: {
-        height: '40px'
+        height: 'auto',
+        width: '40px',
+        maxWidth: '100%',
+        padding: ".5%"
     },
     appBarTransparent: {
         backgroundColor: 'transparent',
@@ -21,10 +24,11 @@ const styles = theme => ({
         alignItems: 'center',
         position: "absolute",
         width: '100%',
+        height: "10%",
         top: 0,
         left: 0,
         margin: 0,
-        padding: 10
+        padding: "1%"
     },
     appBarSolid: {
         backgroundColor: 'white',
@@ -32,15 +36,17 @@ const styles = theme => ({
         alignItems: 'center',
         position: "fixed",
         width: '100%',
+        height: "10%",
         top: 0,
         left: 0,
         margin: 0,
-        padding: "10px"
+        padding: "1%"
     },
     container: {
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
+        height: "100%",
         width: "100%",
         justifyContent: "space-around",
     },
