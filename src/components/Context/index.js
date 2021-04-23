@@ -13,14 +13,17 @@ const styles = theme => ({
     context: {
         marginBottom: "5%",
         width: "100%",
-        height: "100%"
-    },
-    content: {
-        width: "100%",
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
+        alignItems: "center"
+    },
+    content: {
+        marginTop: "2%",
+        width: "80%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
     }
 });
 
@@ -31,8 +34,12 @@ function Context({ classes, datas }) {
                 {datas.title}
             </Typography>
             <Box className={classes.content}>
-                <Typography variant="p" align="center">
+                <Typography variant="p" align="justify">
                     {datas.description}
+                </Typography>
+                <br />
+                <Typography variant="p" align="justify">
+                    {datas.description_part2}
                 </Typography>
             </Box>
         </section>
