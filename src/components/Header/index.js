@@ -101,21 +101,12 @@ function Header({ classes, lang, location = null, datas }) {
                     <img className={classes.logo} src={datas.logo}></img>
                 </Box>
                 <Box className={classes.navBar}>
-                    <Button className={classes[textRef.current]} href="#home">
-                        {datas.navBar.home}
-                    </Button>
-                    <Button className={classes[textRef.current]} href="#project">
-                        {datas.navBar.project}
-                    </Button>
-                    <Button className={classes[textRef.current]} href="#context">
-                        {datas.navBar.context}
-                    </Button>
-                    <Button className={classes[textRef.current]} href="#team">
-                        {datas.navBar.team}
-                    </Button>
-                    <Button className={classes[textRef.current]} href="#contact">
-                        {datas.navBar.contact}
-                    </Button>
+                    {datas.navBar.map(function (info) {
+                        return (<Button className={classes[textRef.current]} href={info.id}>
+                            {info.title}
+                        </Button>);
+                    })
+                    }
                 </Box>
                 <Box>
                     <LanguageSelector classes={classes} location={location} lang={lang} />
