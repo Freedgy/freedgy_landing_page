@@ -13,15 +13,18 @@ const styles = theme => ({
     project: {
         marginBottom: "5%",
         width: "100%",
-        height: "100%"
-    },
-    content: {
-        width: "100%",
         height: "100%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-    }
+    },
+    content: {
+        marginTop: "2%",
+        width: "80%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+    },
 });
 
 function Project({ classes, datas }) {
@@ -31,7 +34,7 @@ function Project({ classes, datas }) {
                 {datas.title}
             </Typography>
             <Box className={classes.content}>
-                <Typography variant="p" align="center">
+                <Typography variant="p" align="justify">
                     {datas.description}
                 </Typography>
             </Box>
