@@ -2,13 +2,24 @@
     "layout": {
         "header": {
             "logo": "/images/logo/watermark.png",
-            "navBar": {
-                "home": "menu",
-                "project": "proyecto",
-                "context": "contexto",
-                "team": "equipo",
-                "contact": "contactarnos"
-            }
+            "navBar": [
+                {
+                    "title": "menu",
+                    "id": "#home"
+                },
+                {
+                    "title": "sobre nosotros",
+                    "id": "#about"
+                },
+                {
+                    "title": "equipo",
+                    "id": "#team"
+                },
+                {
+                    "title": "contactarnos",
+                    "id": "#contact"
+                }
+            ]
         },
         "footer": {
             "instagram": "https://www.instagram.com/freedgy.project",
@@ -31,7 +42,8 @@
         },
         "context": {
             "title": "Context",
-            "description": "Epitech es una escuela de informatica creada en 1999 que forma expertos en Technologias de Información. Esta formación buscada por las empresas se basa en un modelo innovador que enfonca en tres calidades: la adaptabilidad, la auto-progresión y una mano de obra orientada a proyectos. Para llevar a cabo este programa, llamado programa Grande Ecole, el curso de los estudiantes se divide en dos partes. Un primer programa de 2 años abordará los temas más técnicos con el fin de construir una base sólida y un conocimiento variado. El segundo curso de la escuela se llama ciclo de innovación. Dura 3 años, desde el tercero hasta el quinto año del programa Epitech. Su objetivo es desarrollar un proyecto, una experiencia o una tecnología, y está estructurado en tres etapas: la idea y el posicionamiento, el prototipo y finalmente la industrialización y la comercialización. Este proyecto se llama Epitech Innovation Project (EIP). /////// Más de 100 proyectos innovadores de Epitech se presentan cada año en el foro Epitech Experience, el punto culminante final del quinto año y una verdadera síntesis del programa de Epitech. Los estudiantes vienen a defender el éxito de su proyecto frente a un ecosistema de empresarios e inversores. Incluso más que un proyecto, es un paso exitoso en la vida laboral gracias a dos años de trabajo en equipo."
+            "description": "Epitech es una escuela de informatica creada en 1999 que forma expertos en Technologias de Información. Esta formación buscada por las empresas se basa en un modelo innovador que enfonca en tres calidades: la adaptabilidad, la auto-progresión y una mano de obra orientada a proyectos. Para llevar a cabo este programa, llamado programa Grande Ecole, el curso de los estudiantes se divide en dos partes. Un primer programa de 2 años abordará los temas más técnicos con el fin de construir una base sólida y un conocimiento variado. El segundo curso de la escuela se llama ciclo de innovación. Dura 3 años, desde el tercero hasta el quinto año del programa Epitech. Su objetivo es desarrollar un proyecto, una experiencia o una tecnología, y está estructurado en tres etapas: la idea y el posicionamiento, el prototipo y finalmente la industrialización y la comercialización. Este proyecto se llama Epitech Innovation Project (EIP).",
+            "description_part2": "Más de 100 proyectos innovadores de Epitech se presentan cada año en el foro Epitech Experience, el punto culminante final del quinto año y una verdadera síntesis del programa de Epitech. Los estudiantes vienen a defender el éxito de su proyecto frente a un ecosistema de empresarios e inversores. Incluso más que un proyecto, es un paso exitoso en la vida laboral gracias a dos años de trabajo en equipo."
         },
         "team": {
             "title": "Nuestro equipo",

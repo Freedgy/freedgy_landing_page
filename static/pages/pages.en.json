@@ -2,13 +2,24 @@
     "layout": {
         "header": {
             "logo": "/images/logo/watermark.png",
-            "navBar": {
-                "home": "home",
-                "project": "project",
-                "context": "context",
-                "team": "team",
-                "contact": "contact"
-            }
+            "navBar": [
+                {
+                    "title": "home",
+                    "id": "#home"
+                },
+                {
+                    "title": "about",
+                    "id": "#about"
+                },
+                {
+                    "title": "team",
+                    "id": "#team"
+                },
+                {
+                    "title": "contact",
+                    "id": "#contact"
+                }
+            ]
         },
         "footer": {
             "instagram": "https://www.instagram.com/freedgy.project",
@@ -31,7 +42,8 @@
         },
         "context": {
             "title": "Context",
-            "description": "Epitech is a computer school created in 1999 that trains IT Experts. This training sought by companies is based on an innovative model that emphasizes three qualities that are increasingly required: adaptability, self-progression and a project-oriented workforce. To carry out this program, called Grande Ecole program,the students' course is divided into two parts. A first 2-year program will address the most technical topics in order to build a solid base and varied knowledge. The second course of the school is called the innovation cycle. It lasts 3 years, from the third to the fifth year of the Epitech program. It aims to develop a project, an expertise or a technology, and is structured of three stages: the idea and positioning, prototyping and feedback, and finally industrialization and commercialization. This project is called the Epitech Innovation Project (EIP). ////// More than 100 Epitech Innovative Projects are presented each year at the Epitech Experience forum, the final highlight of the fifth year and a real synthesis of Epitech’s program. The students come to defend the success of their project in front of an ecosystem of entrepreneurs, decision-makers and investors. Even more than just a project, it is a successful step into working life thanks to two years of teamwork."
+            "description": "Epitech is a computer school created in 1999 that trains IT Experts. This training sought by companies is based on an innovative model that emphasizes three qualities that are increasingly required: adaptability, self-progression and a project-oriented workforce. To carry out this program, called Grande Ecole program,the students' course is divided into two parts. A first 2-year program will address the most technical topics in order to build a solid base and varied knowledge. The second course of the school is called the innovation cycle. It lasts 3 years, from the third to the fifth year of the Epitech program. It aims to develop a project, an expertise or a technology, and is structured of three stages: the idea and positioning, prototyping and feedback, and finally industrialization and commercialization. This project is called the Epitech Innovation Project (EIP).",
+            "description_part2": "More than 100 Epitech Innovative Projects are presented each year at the Epitech Experience forum, the final highlight of the fifth year and a real synthesis of Epitech’s program. The students come to defend the success of their project in front of an ecosystem of entrepreneurs, decision-makers and investors. Even more than just a project, it is a successful step into working life thanks to two years of teamwork."
         },
         "team": {
             "title": "Our Team",
