@@ -10,7 +10,7 @@ const styles = theme => ({
         marginTop: "5%",
         marginBottom: "5%",
         width: "100%",
-        height: "100%",
+        height: "auto",
         display: "flex",
         justifyContent: "center",
     },

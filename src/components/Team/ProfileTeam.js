@@ -21,8 +21,8 @@ const styles = theme => ({
         color: "#404040",
     },
     avatar: {
-        height: "150px",
-        width: "150px",
+        height: "40%",
+        width: "40%"
     },
     informations: {
         display: "flex",

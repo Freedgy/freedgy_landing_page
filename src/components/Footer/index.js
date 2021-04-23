@@ -22,7 +22,7 @@ const styles = theme => ({
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        padding: "10px"
+        padding: "1%"
     },
 });
 

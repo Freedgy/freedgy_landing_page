@@ -36,7 +36,7 @@ const styles = theme => ({
 
     },
     container: {
-        padding: '0px 36px 48px',
+        padding: '0% 2% 5%',
     },
     about: {
         width: "80%",
@@ -44,6 +44,7 @@ const styles = theme => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        marginBottom: '5%'
     },
 });
 
