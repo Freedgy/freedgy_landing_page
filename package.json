@@ -25,7 +25,8 @@
         "react-dom": "latest",
         "react-flags-select": "^2.1.2",
         "react-helmet": "latest",
-        "react-icons": "^4.2.0"
+        "react-icons": "^4.2.0",
+        "react-material-ui-carousel": "^2.2.4"
     },
     "scripts": {
         "develop": "gatsby develop",
