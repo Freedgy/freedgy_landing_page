@@ -39,7 +39,7 @@ const styles = theme => ({
         padding: '0% 2% 5%',
     },
     about: {
-        width: "80%",
+        width: "90%",
         height: "100%",
         display: "flex",
         flexDirection: "column",
@@ -74,7 +74,6 @@ function Content({ classes, lang, datas }) {
                                         color: '#008080'
                                     }
                                 }}
-                                navButtonsAlwaysVisible="true"
                             >
                                 <Project datas={datas.project} />
                                 <Context datas={datas.context} />
