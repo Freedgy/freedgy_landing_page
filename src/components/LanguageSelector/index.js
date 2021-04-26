@@ -6,10 +6,10 @@ import ReactFlagsSelect from 'react-flags-select';
 
 
 function LanguageSelector({ classes, lang, location, className }) {
-    const [selected, setSelected] = React.useState(lang == "en" ? 'GB' : lang.toUpperCase());
+    const [selected] = React.useState(lang === "en" ? 'GB' : lang.toUpperCase());
 
     function switchLanguage(code) {
-        if (code == 'GB') {
+        if (code === 'GB') {
             navigate(`/${location.hash}`)
         } else {
             navigate(`/${code.toLowerCase()}${location.hash}`)

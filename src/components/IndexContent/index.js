@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Carousel from 'react-material-ui-carousel'
-import HomeIcon from '@material-ui/icons/Home';
 
 import Home from '../Home';
 import Trailer from '../Trailer';

@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
     trailer: {
@@ -42,6 +39,7 @@ function Trailer({ classes, lang, datas }) {
     return (
         <section className={classes.trailer} id="trailer">
             <iframe
+                title="Freedgy_trailer"
                 className={classes.video}
                 src={datas.src}
                 scrolling="no"

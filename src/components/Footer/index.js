@@ -1,15 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
-import IconButton from '@material-ui/core/IconButton';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import MuiLink from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 
