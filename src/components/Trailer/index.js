@@ -8,7 +8,6 @@ import Box from '@material-ui/core/Box';
 const styles = theme => ({
     trailer: {
         marginTop: "5%",
-        marginBottom: "5%",
         width: "100%",
         height: "auto",
         display: "flex",

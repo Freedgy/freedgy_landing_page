@@ -44,7 +44,7 @@ const styles = theme => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginBottom: '5%'
+        marginTop: "5%"
     },
 });
 
