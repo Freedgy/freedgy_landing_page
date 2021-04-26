@@ -13,12 +13,26 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const styles = theme => ({
     profile: {
-        width: "25%",
         height: "100%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         color: "#404040",
+        '@media only screen and (max-width: 600px)': {
+            width: "50%",
+        },
+        '@media only screen and (min-width: 600px)': {
+            width: "50%",
+        },
+        '@media only screen and (min-width: 768px)': {
+            width: "30%",
+        },
+        '@media only screen and (min-width: 992px)': {
+            width: "30%",
+        },
+        '@media only screen and (min-width: 1200px)': {
+            width: "25%",
+        },
     },
     avatar: {
         height: "40%",

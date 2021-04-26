@@ -12,7 +12,7 @@ import ProfileTeam from "./ProfileTeam";
 const styles = theme => ({
     team: {
         marginTop: "5%",
-        width: "100%",
+        width: "90%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
