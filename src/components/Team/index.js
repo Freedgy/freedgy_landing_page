@@ -22,7 +22,7 @@ const styles = theme => ({
         alignContent: "center",
         justifyContent: "center",
         color: "#404040",
-        padding: "5%"
+        padding: "3%"
     },
 });
 

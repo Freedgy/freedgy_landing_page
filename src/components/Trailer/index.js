@@ -5,7 +5,6 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
     trailer: {
         marginTop: "5%",
-        marginBottom: "5%",
         width: "70%",
         height: "auto",
         display: "flex",
