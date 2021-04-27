@@ -6,12 +6,29 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
+import SendIcon from '@material-ui/icons/Send';
+import emailjs from 'emailjs-com';
 
 const styles = theme => ({
     contact: {
-        height: "100%",
+        width: "80%",
+        marginTop: "5%",
+        marginBottom: "5%",
     },
+    contactForm: {
+        marginTop: "2%"
+    },
+    button: {
+        borderColor: 'white',
+        color: "white",
+        backgroundColor: '#008080',
+
+        '&:hover': {
+            borderColor: '#fff',
+            backgroundColor: 'white',
+            color: "#008080",
+        },
+    }
 });
 
 function Contact({ classes, datas }) {
@@ -19,32 +36,25 @@ function Contact({ classes, datas }) {
     const [name, setName] = useState('');
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
-    /*
-    emailjs.sendForm('Freedgy_Contact', 'template_pe8bjh9', e.target, 'user_2StMasAbAPzMasQrAyivL')
-            .then((result) => {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();
-               console.log(result.text);
-            }, (error) => {
-               console.log(error.text);
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(error.text);
-               $('#message-warning').fadeIn();
-            });
-        */
+
     function handleSubmit(event) {
         event.preventDefault();
         console.log('Email:', email, 'Name: ', name, "Object: ", object, "Message: ", message);
+        emailjs.sendForm('Freedgy_Contact', 'template_pe8bjh9', event.target, 'user_2StMasAbAPzMasQrAyivL')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
     }
 
     return (
-        <section id="contact" nValidate className={classes.contact} >
+        <section id="contact" className={classes.contact} >
             <Typography variant="h2" align="center">
                 {datas.title}
             </Typography>
-            <form noValidate onSubmit={handleSubmit}>
+            <form className={classes.contactForm} noValidate onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                         <TextField
@@ -89,19 +99,21 @@ function Contact({ classes, datas }) {
                             label="Message"
                             fullWidth
                             multiline
-                            rows={5}
+                            rows={7}
                             value={message}
                             onInput={e => setMessage(e.target.value)}
                         />
                     </Grid>
+                    <Grid item xs={12}>
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            className={classes.button}
+                            endIcon={<SendIcon />}>
+                            Send
+                        </Button>
+                    </Grid>
                 </Grid>
-                <Button
-                    type="submit"
-                    variant="contained"
-                    endIcon={<Icon>send</Icon>}
-                >
-                    Send
-                </Button>
             </form>
         </section>
     );
