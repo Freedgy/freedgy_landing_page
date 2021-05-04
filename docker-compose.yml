@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  landing-page:
+    container_name: landing-page
+    working_dir: /app
+    command: ./entrypoint.sh
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: freedgy/landing-page:${APP_VERSION}
+    ports:
+      - "${APP_PORT}:8000"
+    volumes:
+     - .:/app
+     - /app/node_modules/
