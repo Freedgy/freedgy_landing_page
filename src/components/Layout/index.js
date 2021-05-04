@@ -172,14 +172,18 @@ let theme = createMuiTheme({
 
 const styles = {
     appContent: {
-        flex: 1,
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: '#00a0a0'
+        "&&": {
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: '#00a0a0'
+        }
     },
     mainContent: {
-        flex: 1,
-        padding: '0%',
+        "&&": {
+            flex: 1,
+            padding: '0%',
+        }
     },
 };
 

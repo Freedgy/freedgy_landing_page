@@ -11,23 +11,28 @@ import emailjs from 'emailjs-com';
 
 const styles = theme => ({
     contact: {
-        width: "80%",
-        marginTop: "5%",
-        marginBottom: "5%",
+        "&&": {
+            width: "80%",
+            marginTop: "5%",
+            marginBottom: "5%",
+        }
     },
     contactForm: {
-        marginTop: "2%"
+        "&&": {
+            marginTop: "2%"
+        }
     },
     button: {
-        borderColor: 'white',
-        color: "white",
-        backgroundColor: '#008080',
-
-        '&:hover': {
-            borderColor: '#fff',
-            backgroundColor: 'white',
-            color: "#008080",
-        },
+        "&&": {
+            borderColor: 'white',
+            color: "white",
+            backgroundColor: '#008080',
+            '&:hover': {
+                borderColor: '#fff',
+                backgroundColor: 'white',
+                color: "#008080",
+            },
+        }
     }
 });
 

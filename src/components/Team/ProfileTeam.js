@@ -9,51 +9,63 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const styles = theme => ({
     profile: {
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        color: "#404040",
-        '@media only screen and (max-width: 600px)': {
-            width: "50%",
-        },
-        '@media only screen and (min-width: 600px)': {
-            width: "50%",
-        },
-        '@media only screen and (min-width: 768px)': {
-            width: "30%",
-        },
-        '@media only screen and (min-width: 992px)': {
-            width: "30%",
-        },
-        '@media only screen and (min-width: 1200px)': {
-            width: "25%",
-        },
+        "&&": {
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            color: "#404040",
+            '@media only screen and (max-width: 600px)': {
+                width: "50%",
+            },
+            '@media only screen and (min-width: 600px)': {
+                width: "50%",
+            },
+            '@media only screen and (min-width: 768px)': {
+                width: "30%",
+            },
+            '@media only screen and (min-width: 992px)': {
+                width: "30%",
+            },
+            '@media only screen and (min-width: 1200px)': {
+                width: "25%",
+            },
+        }
     },
     avatar: {
-        height: "40%",
-        width: "40%"
+        "&&": {
+            height: "40%",
+            width: "40%"
+        }
     },
     informations: {
-        display: "flex",
-        flexDirection: "column",
-        color: "#404040",
-        marginTop: "5%"
+        "&&": {
+            display: "flex",
+            flexDirection: "column",
+            color: "#404040",
+            marginTop: "5%"
+        }
     },
     role: {
-        fontWeight: 500,
-        fontSize: "16px",
-        lineHeight: "20px",
+        "&&": {
+            fontWeight: 500,
+            fontSize: "16px",
+            lineHeight: "20px",
+        }
     },
     city: {
-        fontWeight: 300,
-        fontSize: "16px",
-        lineHeight: "20px",
+        "&&": {
+            fontWeight: 300,
+            fontSize: "16px",
+            lineHeight: "20px",
+        }
     },
     name: {
-        fontWeight: 700,
-        fontSize: "20px",
-        lineHeight: "24px",
+        "&&": {
+            fontWeight: 700,
+            fontSize: "20px",
+            lineHeight: "24px",
+        }
     }
 });
 

@@ -7,22 +7,26 @@ import ProfileTeam from "./ProfileTeam";
 
 const styles = theme => ({
     team: {
-        marginTop: "5%",
-        width: "90%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        color: "#404040",
+        "&&": {
+            marginTop: "5%",
+            width: "90%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            color: "#404040",
+        }
     },
     teamInfos: {
-        width: "100%",
-        display: "flex",
-        flexFlow: "row wrap",
-        alignItems: "flex-start",
-        alignContent: "center",
-        justifyContent: "center",
-        color: "#404040",
-        padding: "3%"
+        "&&": {
+            width: "100%",
+            display: "flex",
+            flexFlow: "row wrap",
+            alignItems: "flex-start",
+            alignContent: "center",
+            justifyContent: "center",
+            color: "#404040",
+            padding: "3%"
+        }
     },
 });
 

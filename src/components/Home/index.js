@@ -8,52 +8,62 @@ import useWindowSize from '/static/js/useWindowSize';
 
 const styles = theme => ({
     home: {
-        background: 'linear-gradient(180deg, #006666 10%, #00a0a0 70%)',
-        width: "100%",
-        margin: 0,
-        padding: '10%',
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around",
-        alignItems: "center",
-        '@media only screen and (max-width: 992px)': {
-            paddingTop: '12%',
-            paddingBottom: '0%'
-        },
+        "&&": {
+            background: 'linear-gradient(180deg, #006666 10%, #00a0a0 70%)',
+            width: "100%",
+            margin: 0,
+            padding: '10%',
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-around",
+            alignItems: "center",
+            '@media only screen and (max-width: 992px)': {
+                paddingTop: '12%',
+                paddingBottom: '0%'
+            },
+        }
     },
     homeImage: {
-        width: "35%",
-        height: 'auto'
+        "&&": {
+            width: "35%",
+            height: 'auto'
+        }
     },
     homeInfos: {
-        flex: "0 0 50%",
-        maxWidht: '50%',
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        '@media only screen and (max-width: 992px)': {
-            flex: "0 0 90%",
-        },
+        "&&": {
+            flex: "0 0 50%",
+            maxWidht: '50%',
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            '@media only screen and (max-width: 992px)': {
+                flex: "0 0 90%",
+            },
+        }
     },
     homeText: {
-        width: "100%",
-        height: "100%",
-        justifyContent: "space-between",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        "&&": {
+            width: "100%",
+            height: "100%",
+            justifyContent: "space-between",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+        }
     },
     button: {
-        borderColor: '#fff',
-        backgroundColor: 'white',
-        color: "#008080",
-        size: "large",
-        margin: "10%",
-        '&:hover': {
-            borderColor: 'white',
-            color: "white",
-            backgroundColor: 'transparent',
-        },
+        "&&": {
+            borderColor: '#fff',
+            backgroundColor: 'white',
+            color: "#008080",
+            size: "large",
+            margin: "10%",
+            '&:hover': {
+                borderColor: 'white',
+                color: "white",
+                backgroundColor: 'transparent',
+            },
+        }
     }
 });
 

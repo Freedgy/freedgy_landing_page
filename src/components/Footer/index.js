@@ -10,13 +10,15 @@ import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
     footer: {
-        backgroundColor: "white",
-        color: "#404040",
-        position: "static",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        padding: "1%"
+        "&&": {
+            backgroundColor: "white",
+            color: "#404040",
+            position: "static",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            padding: "1%"
+        }
     },
 });
 

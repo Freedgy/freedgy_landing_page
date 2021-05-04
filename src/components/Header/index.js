@@ -8,66 +8,80 @@ import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
     logo: {
-        height: 'auto',
-        width: '40px',
-        maxWidth: '100%',
-        padding: ".5%"
+        "&&": {
+            height: 'auto',
+            width: '40px',
+            maxWidth: '100%',
+            padding: ".5%"
+        }
     },
     appBarTransparent: {
-        backgroundColor: 'transparent',
-        color: 'white',
-        alignItems: 'center',
-        position: "absolute",
-        width: '100%',
-        height: "9%",
-        top: 0,
-        left: 0,
-        margin: 0,
-        padding: "1%"
+        "&&": {
+            backgroundColor: 'transparent',
+            color: 'white',
+            alignItems: 'center',
+            position: "absolute",
+            width: '100%',
+            height: "9%",
+            top: 0,
+            left: 0,
+            margin: 0,
+            padding: "1%"
+        }
     },
     appBarSolid: {
-        backgroundColor: 'white',
-        color: '#404040',
-        alignItems: 'center',
-        position: "fixed",
-        width: '100%',
-        height: "9%",
-        top: 0,
-        left: 0,
-        margin: 0,
-        padding: "1%"
+        "&&": {
+            backgroundColor: 'white',
+            color: '#404040',
+            alignItems: 'center',
+            position: "fixed",
+            width: '100%',
+            height: "9%",
+            top: 0,
+            left: 0,
+            margin: 0,
+            padding: "1%"
+        }
     },
     container: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        height: "100%",
-        width: "100%",
-        justifyContent: "space-around",
+        "&&": {
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            height: "100%",
+            width: "100%",
+            justifyContent: "space-around",
+        }
     },
     navBar: {
-        margin: 'auto',
-        display: 'flex',
-        flexdirection: "row",
-        alignItem: "center",
-        width: "30%",
-        justifyContent: "space-around"
+        "&&": {
+            margin: 'auto',
+            display: 'flex',
+            flexdirection: "row",
+            alignItem: "center",
+            width: "30%",
+            justifyContent: "space-around"
+        }
     },
     navItemTransparent: {
-        color: "#fff",
-        backgroundColor: 'transparent',
-        '&:hover': {
-            color: "black",
+        "&&": {
+            color: "#fff",
             backgroundColor: 'transparent',
-        },
+            '&:hover': {
+                color: "black",
+                backgroundColor: 'transparent',
+            },
+        }
     },
     navItemSolid: {
-        color: "#404040",
-        backgroundColor: 'transparent',
-        '&:hover': {
-            color: "#008080",
+        "&&": {
+            color: "#404040",
             backgroundColor: 'transparent',
-        },
+            '&:hover': {
+                color: "#008080",
+                backgroundColor: 'transparent',
+            },
+        }
     }
 });
 

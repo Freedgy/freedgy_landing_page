@@ -14,35 +14,43 @@ import Contact from '../Contact';
 
 const styles = theme => ({
     root: {
-        flexGrow: 1
+        "&&": {
+            flexGrow: 1
+        }
     },
     paper: {
-        margin: 'auto',
-        overflow: 'hidden',
-        [theme.breakpoints.up('sm')]: {
-            minWidth: 600,
-        },
-        [theme.breakpoints.up('lg')]: {
-            minWidth: 936,
-        },
-        backgroundColor: '#f4f6f7',
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        "&&": {
+            margin: 'auto',
+            overflow: 'hidden',
+            [theme.breakpoints.up('sm')]: {
+                minWidth: 600,
+            },
+            [theme.breakpoints.up('lg')]: {
+                minWidth: 936,
+            },
+            backgroundColor: '#f4f6f7',
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+        }
 
     },
     container: {
-        padding: '0% 2% 5%',
+        "&&": {
+            padding: '0% 2% 5%',
+        }
     },
     about: {
-        width: "90%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginTop: "5%"
+        "&&": {
+            width: "90%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "5%"
+        }
     },
 });
 

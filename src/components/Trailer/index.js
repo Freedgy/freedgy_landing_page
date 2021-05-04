@@ -4,33 +4,37 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
     trailer: {
-        marginTop: "5%",
-        width: "70%",
-        height: "auto",
-        display: "flex",
-        justifyContent: "center",
+        "&&": {
+            marginTop: "5%",
+            width: "70%",
+            height: "auto",
+            display: "flex",
+            justifyContent: "center",
+        }
     },
     video: {
-        '@media only screen and (max-width: 600px)': {
-            width: "100%",
-            minHeight: "200px",
-        },
-        '@media only screen and (min-width: 600px)': {
-            width: "100%",
-            minHeight: "250px",
-        },
-        '@media only screen and (min-width: 768px)': {
-            width: "100%",
-            minHeight: "320px",
-        },
-        '@media only screen and (min-width: 992px)': {
-            width: "100%",
-            minHeight: "380px",
-        },
-        '@media only screen and (min-width: 1200px)': {
-            width: "100%",
-            minHeight: "480px",
-        },
+        "&&": {
+            '@media only screen and (max-width: 600px)': {
+                width: "100%",
+                minHeight: "200px",
+            },
+            '@media only screen and (min-width: 600px)': {
+                width: "100%",
+                minHeight: "250px",
+            },
+            '@media only screen and (min-width: 768px)': {
+                width: "100%",
+                minHeight: "320px",
+            },
+            '@media only screen and (min-width: 992px)': {
+                width: "100%",
+                minHeight: "380px",
+            },
+            '@media only screen and (min-width: 1200px)': {
+                width: "100%",
+                minHeight: "480px",
+            },
+        }
     }
 });
 

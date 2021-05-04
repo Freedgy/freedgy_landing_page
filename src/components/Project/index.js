@@ -6,18 +6,22 @@ import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
     project: {
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        "&&": {
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+        }
     },
     content: {
-        marginTop: "2%",
-        width: "80%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
+        "&&": {
+            marginTop: "2%",
+            width: "80%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+        }
     },
 });
 
