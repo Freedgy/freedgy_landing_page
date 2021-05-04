@@ -20,19 +20,19 @@ const styles = theme => ({
             },
             '@media only screen and (min-width: 600px)': {
                 width: "100%",
-                minHeight: "250px",
+                minHeight: "300px",
             },
             '@media only screen and (min-width: 768px)': {
                 width: "100%",
-                minHeight: "320px",
+                minHeight: "400px",
             },
             '@media only screen and (min-width: 992px)': {
                 width: "100%",
-                minHeight: "380px",
+                minHeight: "500px",
             },
             '@media only screen and (min-width: 1200px)': {
                 width: "100%",
-                minHeight: "480px",
+                minHeight: "600px",
             },
         }
     }
