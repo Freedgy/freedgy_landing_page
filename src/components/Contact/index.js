@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { instanceOf } from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -8,6 +8,9 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
 import emailjs from 'emailjs-com';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import CancelIcon from '@material-ui/icons/Cancel';
 
 const styles = theme => ({
     contact: {
@@ -41,15 +44,19 @@ function Contact({ classes, datas }) {
     const [name, setName] = useState('');
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
+    const [send, setSend] = useState(0);
 
     function handleSubmit(event) {
         event.preventDefault();
         console.log('Email:', email, 'Name: ', name, "Object: ", object, "Message: ", message);
+        setSend(1);
         emailjs.sendForm('Freedgy_Contact', 'template_pe8bjh9', event.target, 'user_2StMasAbAPzMasQrAyivL')
             .then((result) => {
                 console.log(result.text);
+                setSend(2);
             }, (error) => {
                 console.log(error.text);
+                setSend(3);
             });
 
     }
@@ -59,7 +66,7 @@ function Contact({ classes, datas }) {
             <Typography variant="h2" align="center">
                 {datas.title}
             </Typography>
-            <form className={classes.contactForm} noValidate onSubmit={handleSubmit}>
+            {send == 0 ? <form className={classes.contactForm} noValidate onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                         <TextField
@@ -115,11 +122,39 @@ function Contact({ classes, datas }) {
                             variant="contained"
                             className={classes.button}
                             endIcon={<SendIcon />}>
-                            Send
+                            {datas.buttonSend}
                         </Button>
                     </Grid>
                 </Grid>
-            </form>
+            </form> : send == 1 ? <LinearProgress className={classes.contactForm} /> : send == 2 ?
+                <form className={classes.contactForm} noValidate onSubmit={x => {
+                    setSend(0);
+                }}>
+                    <Typography variant="h5" align="center" color="green">
+                        {datas.messageSuccess}
+                    </Typography>
+                    <Button
+                        type="submit"
+                        variant="contained"
+                        className={classes.button}
+                        startIcon={<CheckBoxIcon />}>
+                        {datas.buttonSendOther}
+                    </Button>
+                </form> :
+                <form className={classes.contactForm} noValidate onSubmit={x => {
+                    setSend(0);
+                }}>
+                    <Typography variant="h5" align="center" color="Red">
+                        {datas.messageError}
+                    </Typography>
+                    <Button
+                        type="submit"
+                        variant="contained"
+                        className={classes.button}
+                        startIcon={<CancelIcon />}>
+                        {datas.buttonSendOther}
+                    </Button>
+                </form>}
         </section>
     );
 }
