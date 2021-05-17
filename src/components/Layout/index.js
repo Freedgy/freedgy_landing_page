@@ -160,9 +160,9 @@ let theme = createMuiTheme({
     },
     palette: {
         primary: {
-            light: '#63ccff',
-            main: '#F05A22',
-            dark: '#404040',
+            light: '#008080',
+            main: '#008080',
+            dark: '#008080',
         },
     },
     shape: {
