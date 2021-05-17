@@ -108,7 +108,11 @@
             ]
         },
         "contact": {
-            "title": "Contactarnos"
+            "title": "Contactarnos",
+            "buttonSend": "Enviar",
+            "buttonSendOther": "Enviar otro mensaje",
+            "messageSuccess": "Su mensaje se ha enviado!",
+            "messageError": "Un error ha occurido!"
         }
     }
 }

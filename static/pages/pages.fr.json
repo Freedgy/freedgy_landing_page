@@ -108,7 +108,11 @@
             ]
         },
         "contact": {
-            "title": "Nous Contacter"
+            "title": "Nous Contacter",
+            "buttonSend": "Envoyer",
+            "buttonSendOther": "Envoyer un nouveau message",
+            "messageSuccess": "Votre message est envoyé!",
+            "messageError": "Erreur pendant l'envoye de votre message!"
         }
     }
 }

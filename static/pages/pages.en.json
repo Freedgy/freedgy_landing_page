@@ -108,7 +108,11 @@
             ]
         },
         "contact": {
-            "title": "Contact Us"
+            "title": "Contact Us",
+            "buttonSend": "Send",
+            "buttonSendOther": "Send another message",
+            "messageSuccess": "Your message was successfully sent!",
+            "messageError": "Error while sendind your message!"
         }
     }
 }
