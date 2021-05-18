@@ -40,22 +40,20 @@ const styles = theme => ({
 });
 
 function Contact({ classes, datas }) {
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [object, setObject] = useState('');
-    const [message, setMessage] = useState('');
     const [send, setSend] = useState(0);
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log('Email:', email, 'Name: ', name, "Object: ", object, "Message: ", message);
         setSend(1);
+        console.log('Email:', event.target.email.value, 'Name: ', event.target.name.value, "Object: ", event.target.object.value, "Message: ", event.target.message.value);
         emailjs.sendForm('Freedgy_Contact', 'template_pe8bjh9', event.target, 'user_2StMasAbAPzMasQrAyivL')
             .then((result) => {
                 console.log(result.text);
+                event.target.reset();
                 setSend(2);
             }, (error) => {
                 console.log(error.text);
+                event.target.reset();
                 setSend(3);
             });
 
@@ -76,8 +74,6 @@ function Contact({ classes, datas }) {
                             label="Name"
                             fullWidth
                             autoComplete="given-name"
-                            value={name}
-                            onInput={e => setName(e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12} sm={6}>
@@ -88,8 +84,6 @@ function Contact({ classes, datas }) {
                             label="Email"
                             fullWidth
                             autoComplete="email"
-                            value={email}
-                            onInput={e => setEmail(e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -99,8 +93,6 @@ function Contact({ classes, datas }) {
                             name="object"
                             label="Object"
                             fullWidth
-                            value={object}
-                            onInput={e => setObject(e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -112,8 +104,6 @@ function Contact({ classes, datas }) {
                             fullWidth
                             multiline
                             rows={7}
-                            value={message}
-                            onInput={e => setMessage(e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -126,32 +116,18 @@ function Contact({ classes, datas }) {
                         </Button>
                     </Grid>
                 </Grid>
-            </form> : send == 1 ? <LinearProgress className={classes.contactForm} /> : send == 2 ?
+            </form> : send == 1 ? <LinearProgress className={classes.contactForm} /> :
                 <form className={classes.contactForm} noValidate onSubmit={x => {
                     setSend(0);
                 }}>
-                    <Typography variant="h5" align="center" color="green">
-                        {datas.messageSuccess}
+                    <Typography variant="h5" align="center" color={send == 2 ? "green" : "red"}>
+                        {send == 2 ? datas.messageSuccess : datas.messageError}
                     </Typography>
                     <Button
                         type="submit"
                         variant="contained"
                         className={classes.button}
-                        startIcon={<CheckBoxIcon />}>
-                        {datas.buttonSendOther}
-                    </Button>
-                </form> :
-                <form className={classes.contactForm} noValidate onSubmit={x => {
-                    setSend(0);
-                }}>
-                    <Typography variant="h5" align="center" color="Red">
-                        {datas.messageError}
-                    </Typography>
-                    <Button
-                        type="submit"
-                        variant="contained"
-                        className={classes.button}
-                        startIcon={<CancelIcon />}>
+                        startIcon={send == 2 ? <CheckBoxIcon /> : <CancelIcon />}>
                         {datas.buttonSendOther}
                     </Button>
                 </form>}
