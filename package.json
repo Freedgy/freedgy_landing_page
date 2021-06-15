@@ -10,9 +10,10 @@
     "dependencies": {
         "@emotion/react": "latest",
         "@emotion/styled": "latest",
-        "@material-ui/core": "next",
+        "@material-ui/core": "^4.11.4",
         "@material-ui/icons": "^4.11.2",
-        "@material-ui/styles": "next",
+        "@material-ui/styles": "^4.11.4",
+        "@testing-library/react": "^11.2.7",
         "classnames": "^2.3.1",
         "emailjs-com": "^2.6.4",
         "gatsby": "latest",
@@ -35,6 +36,19 @@
         "build": "gatsby build",
         "serve": "gatsby serve",
         "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
-        "start": "npm run develop"
+        "start": "npm run develop",
+        "test": "jest"
+    },
+    "jest": {
+        "testEnvironment": "jsdom"
+    },
+    "devDependencies": {
+        "babel-jest": "^27.0.2",
+        "babel-preset-gatsby": "^1.7.1",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.6",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^27.0.4",
+        "react-test-renderer": "^17.0.2"
     }
 }

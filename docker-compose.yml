@@ -14,7 +14,7 @@ services:
       SSL_CRT_FILE: "/app/ssl/certificate.crt"
       SSL_KEY_FILE: "/app/ssl/certificate.key"
     ports:
-      - "${APP_PORT_HTTP}:8000"
+      - "${APP_PORT_HTTPS}:8000"
     volumes:
      - .:/app
      - /app/node_modules/
@@ -30,7 +30,7 @@ services:
     environment: 
       DANGEROUSLY_DISABLE_HOST_CHECK: "true"
     ports:
-      - "${APP_PORT_HTTPS}:8000"
+      - "${APP_PORT_HTTP}:8000"
     volumes:
      - .:/app
      - /app/node_modules/
