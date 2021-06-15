@@ -1,15 +1,36 @@
 version: '3.7'
 services:
-  landing-page:
-    container_name: landing-page
+  landing-page-http:
+    container_name: landing-page-http
     working_dir: /app
     command: ./entrypoint.sh
     build: 
       context: .
       dockerfile: Dockerfile
-    image: freedgy/landing-page:${APP_VERSION}
+    image: freedgy/landing-page:${APP_VERSION}:http
+    environment: 
+      DANGEROUSLY_DISABLE_HOST_CHECK: "true"
+      HTTPS: "true"
+      SSL_CRT_FILE: "/app/ssl/certificate.crt"
+      SSL_KEY_FILE: "/app/ssl/certificate.key"
     ports:
-      - "${APP_PORT}:8000"
+      - "${APP_PORT_HTTP}:8000"
+    volumes:
+     - .:/app
+     - /app/node_modules/
+     - ./ssl:/app/ssl/
+  landing-page-https:
+    container_name: landing-page-https
+    working_dir: /app
+    command: ./entrypoint.sh
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: freedgy/landing-page:${APP_VERSION}:https
+    environment: 
+      DANGEROUSLY_DISABLE_HOST_CHECK: "true"
+    ports:
+      - "${APP_PORT_HTTPS}:8000"
     volumes:
      - .:/app
      - /app/node_modules/
