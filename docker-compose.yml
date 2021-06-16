@@ -1,7 +1,7 @@
 version: '3.7'
 services:
-  landing-page-http:
-    container_name: landing-page-http
+  landing-page-https:
+    container_name: landing-page-https
     working_dir: /app
     command: ./entrypoint.sh
     build: 
@@ -19,8 +19,8 @@ services:
      - .:/app
      - /app/node_modules/
      - ./ssl:/app/ssl/
-  landing-page-https:
-    container_name: landing-page-https
+  landing-page-http:
+    container_name: landing-page-http
     working_dir: /app
     command: ./entrypoint.sh
     build: 
