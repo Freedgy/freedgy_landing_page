@@ -20,14 +20,20 @@ build:
 
 re-build:
 	sudo docker-compose down -v
-	sudo docker rmi freedgy/landing-page:${APP_VERSION}
+	sudo docker rmi freedgy/landing-page-http:${APP_VERSION}
 	sudo docker-compose build
 
 logs:
-	sudo docker logs landing-page
+	sudo docker logs landing-page-http
 
 ps:
 	sudo docker ps
 
 ps-a:
 	sudo docker ps -a
+
+clean-test:
+	rm -rf ./**/**/__snapshots__
+
+test:
+	npm test
