@@ -82,7 +82,7 @@ function Home({ classes, datas }) {
                         {datas.description}
                     </Typography>
                 </Box>
-                <Button className={classes.button} variant="outlined">
+                <Button className={classes.button} variant="outlined" href="http://app.freedgy.com">
                     {datas.button}
                 </Button>
             </Box>
