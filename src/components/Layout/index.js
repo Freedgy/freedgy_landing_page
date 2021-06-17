@@ -207,7 +207,6 @@ function Layout({ location, children, classes, lang, datas }) {
 
 Layout.propTypes = {
     classes: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired,
     children: PropTypes.object,
 };
 
