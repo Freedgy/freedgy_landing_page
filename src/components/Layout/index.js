@@ -164,6 +164,11 @@ let theme = createMuiTheme({
             main: '#008080',
             dark: '#008080',
         },
+        secondary: {
+            light: '#fff',
+            main: '#fff',
+            dark: '#fff',
+        },
     },
     shape: {
         borderRadius: 8,

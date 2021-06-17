@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
-import useWindowSize from '/static/js/useWindowSize';
+import useWindowSize from '../../../static/js/useWindowSize';
 
 const styles = theme => ({
     home: {
@@ -74,11 +74,11 @@ function Home({ classes, datas }) {
         <section id="home" className={classes.home}>
             <Box className={classes.homeInfos}>
                 <Box className={classes.homeText}>
-                    <Typography variant="h1" color='#fff' align="center">
+                    <Typography variant="h1" color='secondary' align="center">
                         {datas.title}
                     </Typography>
                     <br />
-                    <Typography variant="body1" color="#fff" align="justify">
+                    <Typography variant="body1" color="secondary" align="justify">
                         {datas.description}
                     </Typography>
                 </Box>

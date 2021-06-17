@@ -5,7 +5,7 @@ import { navigate } from 'gatsby';
 import ReactFlagsSelect from 'react-flags-select';
 
 
-function LanguageSelector({ classes, lang, location, className }) {
+function LanguageSelector({ lang, location }) {
     const [selected] = React.useState(lang === "en" ? 'GB' : lang.toUpperCase());
 
     function switchLanguage(code) {

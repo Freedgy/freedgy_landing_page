@@ -31,7 +31,7 @@ const styles = theme => ({
             color: "white",
             backgroundColor: '#008080',
             '&:hover': {
-                borderColor: '#fff',
+                borderColor: 'secondary',
                 backgroundColor: 'white',
                 color: "#008080",
             },
