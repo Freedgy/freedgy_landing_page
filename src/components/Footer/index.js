@@ -29,7 +29,7 @@ function Footer({ classes, datas }) {
             <Box>
                 <Typography variant="body2" align="center">
                     {'Copyright © '}
-                    <MuiLink color="#008080" href="https://freedgy.com/">
+                    <MuiLink color="primary" href="https://freedgy.com/">
                         Freedgy
                     </MuiLink>
                     {' '}

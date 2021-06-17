@@ -36,7 +36,7 @@ function Team({ classes, datas }) {
             <Typography variant="h2" align="center">
                 {datas.title}
             </Typography>
-            <Typography variant="p" align="center">
+            <Typography variant="body1" align="center">
                 {datas.description}
             </Typography>
             <Box className={classes.teamInfos}>

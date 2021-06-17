@@ -32,7 +32,7 @@ function Project({ classes, datas }) {
                 {datas.title}
             </Typography>
             <Box className={classes.content}>
-                <Typography variant="p" align="justify">
+                <Typography variant="body1" align="justify">
                     {datas.description}
                 </Typography>
             </Box>

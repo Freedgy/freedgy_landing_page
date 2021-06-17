@@ -32,11 +32,11 @@ function Context({ classes, datas }) {
                 {datas.title}
             </Typography>
             <Box className={classes.content}>
-                <Typography variant="p" align="justify">
+                <Typography variant="body1" align="justify">
                     {datas.description}
                 </Typography>
                 <br />
-                <Typography variant="p" align="justify">
+                <Typography variant="body1" align="justify">
                     {datas.description_part2}
                 </Typography>
             </Box>

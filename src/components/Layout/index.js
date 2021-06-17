@@ -117,7 +117,7 @@ let theme = createMuiTheme({
                 fontSize: "88px",
             },
         },
-        p: {
+        body1: {
             '@media only screen and (max-width: 600px)': {
                 fontWeight: 300,
                 fontSize: "12px",

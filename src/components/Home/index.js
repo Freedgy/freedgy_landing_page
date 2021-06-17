@@ -78,7 +78,7 @@ function Home({ classes, datas }) {
                         {datas.title}
                     </Typography>
                     <br />
-                    <Typography variant="p" color="#fff" align="justify">
+                    <Typography variant="body1" color="#fff" align="justify">
                         {datas.description}
                     </Typography>
                 </Box>
