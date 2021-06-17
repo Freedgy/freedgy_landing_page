@@ -23,6 +23,7 @@
         "gatsby-plugin-material-ui": "latest",
         "gatsby-plugin-react-helmet": "latest",
         "jquery": "^3.6.0",
+        "jsdom": "^16.6.0",
         "prop-types": "^15.7.2",
         "react": "latest",
         "react-dom": "latest",
